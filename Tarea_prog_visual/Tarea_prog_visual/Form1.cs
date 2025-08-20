@@ -20,12 +20,8 @@ namespace Tarea_prog_visual
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void clicks_Click(object sender, EventArgs e)
         {
             c++;
             cont.Text = "Contador: " + c;
@@ -159,11 +155,6 @@ namespace Tarea_prog_visual
             estatura.Text = String.Empty;
             resIMC.Text = "Tu IMC es: -";
             catIMC.Text = "Tu Categoría es: -";
-        }
-
-        private void registro_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void ctUsuario_TextChanged(object sender, EventArgs e)

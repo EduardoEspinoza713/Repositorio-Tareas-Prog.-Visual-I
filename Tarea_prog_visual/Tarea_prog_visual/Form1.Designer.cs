@@ -41,7 +41,7 @@
             this.CClick = new System.Windows.Forms.TabPage();
             this.btReCont = new System.Windows.Forms.Button();
             this.cont = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.clicks = new System.Windows.Forms.Button();
             this.Conversor = new System.Windows.Forms.TabPage();
             this.limp = new System.Windows.Forms.Button();
             this.btConvertir = new System.Windows.Forms.Button();
@@ -182,7 +182,7 @@
             // 
             this.CClick.Controls.Add(this.btReCont);
             this.CClick.Controls.Add(this.cont);
-            this.CClick.Controls.Add(this.button1);
+            this.CClick.Controls.Add(this.clicks);
             this.CClick.Location = new System.Drawing.Point(4, 25);
             this.CClick.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CClick.Name = "CClick";
@@ -214,20 +214,19 @@
             this.cont.Size = new System.Drawing.Size(464, 91);
             this.cont.TabIndex = 1;
             this.cont.Text = "Contador: 0";
-            this.cont.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button1
+            // clicks
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkGray;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(40, 41);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(219, 121);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Click";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.clicks.BackColor = System.Drawing.Color.DarkGray;
+            this.clicks.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clicks.Location = new System.Drawing.Point(40, 41);
+            this.clicks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.clicks.Name = "clicks";
+            this.clicks.Size = new System.Drawing.Size(219, 121);
+            this.clicks.TabIndex = 0;
+            this.clicks.Text = "Click";
+            this.clicks.UseVisualStyleBackColor = false;
+            this.clicks.Click += new System.EventHandler(this.clicks_Click);
             // 
             // Conversor
             // 
@@ -322,7 +321,6 @@
             this.registro.Size = new System.Drawing.Size(817, 373);
             this.registro.TabIndex = 3;
             this.registro.Text = "Registro";
-            this.registro.Click += new System.EventHandler(this.registro_Click);
             // 
             // btSesion
             // 
@@ -331,7 +329,7 @@
             this.btSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSesion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btSesion.Location = new System.Drawing.Point(88, 277);
-            this.btSesion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btSesion.Margin = new System.Windows.Forms.Padding(4);
             this.btSesion.Name = "btSesion";
             this.btSesion.Size = new System.Drawing.Size(185, 57);
             this.btSesion.TabIndex = 5;
@@ -377,7 +375,7 @@
             this.ctClave.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ctClave.Enabled = false;
             this.ctClave.Location = new System.Drawing.Point(293, 202);
-            this.ctClave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ctClave.Margin = new System.Windows.Forms.Padding(4);
             this.ctClave.Name = "ctClave";
             this.ctClave.PasswordChar = '*';
             this.ctClave.Size = new System.Drawing.Size(297, 22);
@@ -388,7 +386,7 @@
             // 
             this.ctUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ctUsuario.Location = new System.Drawing.Point(293, 117);
-            this.ctUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ctUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.ctUsuario.Name = "ctUsuario";
             this.ctUsuario.Size = new System.Drawing.Size(297, 22);
             this.ctUsuario.TabIndex = 0;
@@ -424,7 +422,7 @@
         private System.Windows.Forms.TabPage CClick;
         private System.Windows.Forms.TabPage Conversor;
         private System.Windows.Forms.Label cont;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button clicks;
         private System.Windows.Forms.Button btConvertir;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

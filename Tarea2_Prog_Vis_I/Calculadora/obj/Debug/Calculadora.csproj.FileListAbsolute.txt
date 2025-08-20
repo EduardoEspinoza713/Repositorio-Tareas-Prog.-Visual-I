@@ -1,0 +1,11 @@
+C:\Users\ECEP\source\repos\Tarea2_Prog_Vis_I\Calculadora\bin\Debug\Calculadora.exe.config
+C:\Users\ECEP\source\repos\Tarea2_Prog_Vis_I\Calculadora\bin\Debug\Calculadora.exe
+C:\Users\ECEP\source\repos\Tarea2_Prog_Vis_I\Calculadora\bin\Debug\Calculadora.pdb
+C:\Users\ECEP\source\repos\Tarea2_Prog_Vis_I\Calculadora\obj\Debug\Calculadora.csproj.AssemblyReference.cache
+C:\Users\ECEP\source\repos\Tarea2_Prog_Vis_I\Calculadora\obj\Debug\Calculadora.Form1.resources
+C:\Users\ECEP\source\repos\Tarea2_Prog_Vis_I\Calculadora\obj\Debug\Calculadora.Properties.Resources.resources
+C:\Users\ECEP\source\repos\Tarea2_Prog_Vis_I\Calculadora\obj\Debug\Calculadora.csproj.GenerateResource.cache
+C:\Users\ECEP\source\repos\Tarea2_Prog_Vis_I\Calculadora\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\ECEP\source\repos\Tarea2_Prog_Vis_I\Calculadora\obj\Debug\Calculadora.exe
+C:\Users\ECEP\source\repos\Tarea2_Prog_Vis_I\Calculadora\obj\Debug\Calculadora.pdb
+C:\Users\ECEP\source\repos\Tarea2_Prog_Vis_I\Calculadora\obj\Debug\Calculadora.exe.config
