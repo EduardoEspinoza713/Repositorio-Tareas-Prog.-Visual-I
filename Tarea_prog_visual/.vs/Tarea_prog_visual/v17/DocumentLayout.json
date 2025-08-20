@@ -1,0 +1,91 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ECEP\\source\\repos\\Tarea_prog_visual\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3552F5B3-02AE-43CE-A5A1-5D8C1617F706}|Tarea_prog_visual\\Tarea_prog_visual.csproj|c:\\users\\ecep\\source\\repos\\tarea_prog_visual\\tarea_prog_visual\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3552F5B3-02AE-43CE-A5A1-5D8C1617F706}|Tarea_prog_visual\\Tarea_prog_visual.csproj|solutionrelative:tarea_prog_visual\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3552F5B3-02AE-43CE-A5A1-5D8C1617F706}|Tarea_prog_visual\\Tarea_prog_visual.csproj|c:\\users\\ecep\\source\\repos\\tarea_prog_visual\\tarea_prog_visual\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3552F5B3-02AE-43CE-A5A1-5D8C1617F706}|Tarea_prog_visual\\Tarea_prog_visual.csproj|solutionrelative:tarea_prog_visual\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3552F5B3-02AE-43CE-A5A1-5D8C1617F706}|Tarea_prog_visual\\Tarea_prog_visual.csproj|C:\\Users\\ECEP\\source\\repos\\Tarea_prog_visual\\tarea_prog_visual\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3552F5B3-02AE-43CE-A5A1-5D8C1617F706}|Tarea_prog_visual\\Tarea_prog_visual.csproj|solutionrelative:tarea_prog_visual\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3552F5B3-02AE-43CE-A5A1-5D8C1617F706}|Tarea_prog_visual\\Tarea_prog_visual.csproj|C:\\Users\\ECEP\\source\\repos\\Tarea_prog_visual\\tarea_prog_visual\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3552F5B3-02AE-43CE-A5A1-5D8C1617F706}|Tarea_prog_visual\\Tarea_prog_visual.csproj|solutionrelative:tarea_prog_visual\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea_prog_visual\\Tarea_prog_visual\\Program.cs",
+              "RelativeDocumentMoniker": "Tarea_prog_visual\\Program.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea_prog_visual\\Tarea_prog_visual\\Program.cs",
+              "RelativeToolTip": "Tarea_prog_visual\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T13:35:37.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea_prog_visual\\Tarea_prog_visual\\Form1.cs",
+              "RelativeDocumentMoniker": "Tarea_prog_visual\\Form1.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea_prog_visual\\Tarea_prog_visual\\Form1.cs",
+              "RelativeToolTip": "Tarea_prog_visual\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T13:28:38.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea_prog_visual\\Tarea_prog_visual\\Form1.cs",
+              "RelativeDocumentMoniker": "Tarea_prog_visual\\Form1.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea_prog_visual\\Tarea_prog_visual\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Tarea_prog_visual\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T13:15:43.429Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea_prog_visual\\Tarea_prog_visual\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Tarea_prog_visual\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea_prog_visual\\Tarea_prog_visual\\Form1.Designer.cs",
+              "RelativeToolTip": "Tarea_prog_visual\\Form1.Designer.cs",
+              "ViewState": "AgIAAN4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T01:20:11.492Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

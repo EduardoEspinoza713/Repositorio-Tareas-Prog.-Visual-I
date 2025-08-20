@@ -1,0 +1,11 @@
+C:\Users\ECEP\source\repos\Tarea_prog_visual\Tarea_prog_visual\bin\Debug\Tarea_prog_visual.exe.config
+C:\Users\ECEP\source\repos\Tarea_prog_visual\Tarea_prog_visual\bin\Debug\Tarea_prog_visual.exe
+C:\Users\ECEP\source\repos\Tarea_prog_visual\Tarea_prog_visual\bin\Debug\Tarea_prog_visual.pdb
+C:\Users\ECEP\source\repos\Tarea_prog_visual\Tarea_prog_visual\obj\Debug\Tarea_prog_visual.csproj.AssemblyReference.cache
+C:\Users\ECEP\source\repos\Tarea_prog_visual\Tarea_prog_visual\obj\Debug\Tarea_prog_visual.Form1.resources
+C:\Users\ECEP\source\repos\Tarea_prog_visual\Tarea_prog_visual\obj\Debug\Tarea_prog_visual.Properties.Resources.resources
+C:\Users\ECEP\source\repos\Tarea_prog_visual\Tarea_prog_visual\obj\Debug\Tarea_prog_visual.csproj.GenerateResource.cache
+C:\Users\ECEP\source\repos\Tarea_prog_visual\Tarea_prog_visual\obj\Debug\Tarea_prog_visual.csproj.CoreCompileInputs.cache
+C:\Users\ECEP\source\repos\Tarea_prog_visual\Tarea_prog_visual\obj\Debug\Tarea_prog_visual.exe
+C:\Users\ECEP\source\repos\Tarea_prog_visual\Tarea_prog_visual\obj\Debug\Tarea_prog_visual.pdb
+C:\Users\ECEP\source\repos\Tarea_prog_visual\Tarea_prog_visual\obj\Debug\Tarea_prog_visual.exe.config
