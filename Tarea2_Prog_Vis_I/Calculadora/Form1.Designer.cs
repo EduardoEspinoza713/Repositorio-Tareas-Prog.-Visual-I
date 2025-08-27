@@ -44,22 +44,22 @@
             this.bt2 = new System.Windows.Forms.Button();
             this.bt3 = new System.Windows.Forms.Button();
             this.btPi = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
+            this.btAbs = new System.Windows.Forms.Button();
             this.bt4 = new System.Windows.Forms.Button();
             this.bt5 = new System.Windows.Forms.Button();
             this.bt6 = new System.Windows.Forms.Button();
             this.btlog = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
+            this.btPorc = new System.Windows.Forms.Button();
             this.bt7 = new System.Windows.Forms.Button();
             this.bt8 = new System.Windows.Forms.Button();
             this.bt9 = new System.Windows.Forms.Button();
             this.btExpo = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
+            this.btCuadrado = new System.Windows.Forms.Button();
             this.bt0 = new System.Windows.Forms.Button();
             this.btIgual = new System.Windows.Forms.Button();
             this.btdecimal = new System.Windows.Forms.Button();
             this.btRaiz = new System.Windows.Forms.Button();
-            this.button30 = new System.Windows.Forms.Button();
+            this.btBin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // pantalla
@@ -70,10 +70,11 @@
             this.pantalla.Location = new System.Drawing.Point(33, 34);
             this.pantalla.Multiline = true;
             this.pantalla.Name = "pantalla";
-            this.pantalla.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.pantalla.Size = new System.Drawing.Size(317, 90);
+            this.pantalla.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.pantalla.Size = new System.Drawing.Size(317, 79);
             this.pantalla.TabIndex = 0;
             this.pantalla.Text = "0";
+            this.pantalla.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btMmas
             // 
@@ -84,6 +85,7 @@
             this.btMmas.TabIndex = 1;
             this.btMmas.Text = "M+";
             this.btMmas.UseVisualStyleBackColor = false;
+            this.btMmas.Click += new System.EventHandler(this.btMmas_Click);
             // 
             // label1
             // 
@@ -97,33 +99,38 @@
             // btMmenos
             // 
             this.btMmenos.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btMmenos.Enabled = false;
             this.btMmenos.Location = new System.Drawing.Point(104, 151);
             this.btMmenos.Name = "btMmenos";
             this.btMmenos.Size = new System.Drawing.Size(54, 54);
             this.btMmenos.TabIndex = 3;
             this.btMmenos.Text = "M-";
             this.btMmenos.UseVisualStyleBackColor = false;
+            this.btMmenos.Click += new System.EventHandler(this.btMmenos_Click);
             // 
             // btMC
             // 
             this.btMC.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btMC.Enabled = false;
             this.btMC.Location = new System.Drawing.Point(164, 151);
             this.btMC.Name = "btMC";
             this.btMC.Size = new System.Drawing.Size(54, 54);
             this.btMC.TabIndex = 4;
             this.btMC.Text = "MC";
             this.btMC.UseVisualStyleBackColor = false;
+            this.btMC.Click += new System.EventHandler(this.btMC_Click);
             // 
             // btMR
             // 
             this.btMR.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btMR.Enabled = false;
             this.btMR.Location = new System.Drawing.Point(224, 151);
             this.btMR.Name = "btMR";
             this.btMR.Size = new System.Drawing.Size(54, 54);
             this.btMR.TabIndex = 5;
             this.btMR.Text = "MR";
             this.btMR.UseVisualStyleBackColor = false;
-            this.btMR.Click += new System.EventHandler(this.button4_Click);
+            this.btMR.Click += new System.EventHandler(this.btMR_Click);
             // 
             // btBA
             // 
@@ -170,6 +177,7 @@
             this.btmult.TabIndex = 9;
             this.btmult.Text = "*";
             this.btmult.UseVisualStyleBackColor = false;
+            this.btmult.Click += new System.EventHandler(this.btmult_Click);
             // 
             // btDiv
             // 
@@ -181,6 +189,7 @@
             this.btDiv.TabIndex = 10;
             this.btDiv.Text = "/";
             this.btDiv.UseVisualStyleBackColor = false;
+            this.btDiv.Click += new System.EventHandler(this.btDiv_Click);
             // 
             // btCE
             // 
@@ -233,16 +242,18 @@
             this.btPi.TabIndex = 15;
             this.btPi.Text = "π";
             this.btPi.UseVisualStyleBackColor = false;
+            this.btPi.Click += new System.EventHandler(this.btPi_Click);
             // 
-            // button15
+            // btAbs
             // 
-            this.button15.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button15.Location = new System.Drawing.Point(284, 271);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(54, 54);
-            this.button15.TabIndex = 16;
-            this.button15.Text = "button15";
-            this.button15.UseVisualStyleBackColor = false;
+            this.btAbs.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btAbs.Location = new System.Drawing.Point(284, 271);
+            this.btAbs.Name = "btAbs";
+            this.btAbs.Size = new System.Drawing.Size(54, 54);
+            this.btAbs.TabIndex = 16;
+            this.btAbs.Text = "|x|";
+            this.btAbs.UseVisualStyleBackColor = false;
+            this.btAbs.Click += new System.EventHandler(this.btAbs_Click);
             // 
             // bt4
             // 
@@ -283,16 +294,18 @@
             this.btlog.TabIndex = 20;
             this.btlog.Text = "log";
             this.btlog.UseVisualStyleBackColor = false;
+            this.btlog.Click += new System.EventHandler(this.btlog_Click);
             // 
-            // button20
+            // btPorc
             // 
-            this.button20.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button20.Location = new System.Drawing.Point(284, 331);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(54, 54);
-            this.button20.TabIndex = 21;
-            this.button20.Text = "button20";
-            this.button20.UseVisualStyleBackColor = false;
+            this.btPorc.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btPorc.Location = new System.Drawing.Point(284, 331);
+            this.btPorc.Name = "btPorc";
+            this.btPorc.Size = new System.Drawing.Size(54, 54);
+            this.btPorc.TabIndex = 21;
+            this.btPorc.Text = "%";
+            this.btPorc.UseVisualStyleBackColor = false;
+            this.btPorc.Click += new System.EventHandler(this.btPorc_Click);
             // 
             // bt7
             // 
@@ -333,16 +346,18 @@
             this.btExpo.TabIndex = 25;
             this.btExpo.Text = "^";
             this.btExpo.UseVisualStyleBackColor = false;
+            this.btExpo.Click += new System.EventHandler(this.btExpo_Click);
             // 
-            // button25
+            // btCuadrado
             // 
-            this.button25.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button25.Location = new System.Drawing.Point(284, 391);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(54, 54);
-            this.button25.TabIndex = 26;
-            this.button25.Text = "button25";
-            this.button25.UseVisualStyleBackColor = false;
+            this.btCuadrado.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btCuadrado.Location = new System.Drawing.Point(284, 391);
+            this.btCuadrado.Name = "btCuadrado";
+            this.btCuadrado.Size = new System.Drawing.Size(54, 54);
+            this.btCuadrado.TabIndex = 26;
+            this.btCuadrado.Text = "^2";
+            this.btCuadrado.UseVisualStyleBackColor = false;
+            this.btCuadrado.Click += new System.EventHandler(this.btCuadrado_Click);
             // 
             // bt0
             // 
@@ -372,7 +387,7 @@
             this.btdecimal.Name = "btdecimal";
             this.btdecimal.Size = new System.Drawing.Size(54, 54);
             this.btdecimal.TabIndex = 29;
-            this.btdecimal.Text = ",";
+            this.btdecimal.Text = ".";
             this.btdecimal.UseVisualStyleBackColor = true;
             this.btdecimal.Click += new System.EventHandler(this.btdecimal_Click);
             // 
@@ -385,38 +400,40 @@
             this.btRaiz.TabIndex = 30;
             this.btRaiz.Text = "√";
             this.btRaiz.UseVisualStyleBackColor = false;
+            this.btRaiz.Click += new System.EventHandler(this.btRaiz_Click);
             // 
-            // button30
+            // btBin
             // 
-            this.button30.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button30.Location = new System.Drawing.Point(282, 451);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(54, 54);
-            this.button30.TabIndex = 31;
-            this.button30.Text = "button30";
-            this.button30.UseVisualStyleBackColor = false;
+            this.btBin.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btBin.Location = new System.Drawing.Point(282, 451);
+            this.btBin.Name = "btBin";
+            this.btBin.Size = new System.Drawing.Size(54, 54);
+            this.btBin.TabIndex = 31;
+            this.btBin.Text = "Bin";
+            this.btBin.UseVisualStyleBackColor = false;
+            this.btBin.Click += new System.EventHandler(this.btBin_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(378, 580);
-            this.Controls.Add(this.button30);
+            this.Controls.Add(this.btBin);
             this.Controls.Add(this.btRaiz);
             this.Controls.Add(this.btdecimal);
             this.Controls.Add(this.btIgual);
             this.Controls.Add(this.bt0);
-            this.Controls.Add(this.button25);
+            this.Controls.Add(this.btCuadrado);
             this.Controls.Add(this.btExpo);
             this.Controls.Add(this.bt9);
             this.Controls.Add(this.bt8);
             this.Controls.Add(this.bt7);
-            this.Controls.Add(this.button20);
+            this.Controls.Add(this.btPorc);
             this.Controls.Add(this.btlog);
             this.Controls.Add(this.bt6);
             this.Controls.Add(this.bt5);
             this.Controls.Add(this.bt4);
-            this.Controls.Add(this.button15);
+            this.Controls.Add(this.btAbs);
             this.Controls.Add(this.btPi);
             this.Controls.Add(this.bt3);
             this.Controls.Add(this.bt2);
@@ -434,8 +451,7 @@
             this.Controls.Add(this.btMmas);
             this.Controls.Add(this.pantalla);
             this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "Calculadora";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -459,22 +475,22 @@
         private System.Windows.Forms.Button bt2;
         private System.Windows.Forms.Button bt3;
         private System.Windows.Forms.Button btPi;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button btAbs;
         private System.Windows.Forms.Button bt4;
         private System.Windows.Forms.Button bt5;
         private System.Windows.Forms.Button bt6;
         private System.Windows.Forms.Button btlog;
-        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button btPorc;
         private System.Windows.Forms.Button bt7;
         private System.Windows.Forms.Button bt8;
         private System.Windows.Forms.Button bt9;
         private System.Windows.Forms.Button btExpo;
-        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button btCuadrado;
         private System.Windows.Forms.Button bt0;
         private System.Windows.Forms.Button btIgual;
         private System.Windows.Forms.Button btdecimal;
         private System.Windows.Forms.Button btRaiz;
-        private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.Button btBin;
     }
 }
 
