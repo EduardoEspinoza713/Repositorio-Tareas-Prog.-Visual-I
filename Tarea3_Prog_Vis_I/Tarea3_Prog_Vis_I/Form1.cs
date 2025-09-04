@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -52,9 +53,41 @@ namespace Tarea3_Prog_Vis_I
             btnEditar.Enabled = false;
             btnEliminar.Enabled = false;
             btnAgregar.Enabled = false;
+            txtCodigo.Enabled = true;
+        }
+        bool compCod()
+        {
+            for(int i = 0; i < listaTareas.Count; i++)
+            {
+                if (txtCodigo.Text == listaTareas[i].Codigo)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        bool comVac()
+        {
+            if (txtCodigo.Text == String.Empty || txtNombre.Text == String.Empty || txtDescripcion.Text == String.Empty || txtLugar.Text == String.Empty || cmbEstado.SelectedItem == null)
+            {
+                return true;
+            }
+            return false;
         }
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            if (comVac())
+            {
+                MessageBox.Show("No se pueden dejar campos vacíos");
+                return;
+            }
+            if (compCod())
+            {
+                MessageBox.Show("El código ya existe, ingrese uno diferente, se distinguen mayúculas y minúsculas.");
+                txtCodigo.Text = String.Empty;
+                txtCodigo.Enabled = true;
+                return;
+            }
             Tarea nueva = new Tarea()
             {
                 Codigo = txtCodigo.Text,
@@ -73,17 +106,32 @@ namespace Tarea3_Prog_Vis_I
             busDes(true);
             limpCamp();
         }
-
+        int retIndiceCod()
+        {
+            for (int i = 0; i < listaTareas.Count; i++)
+            {
+                if (txtCodigo.Text == listaTareas[i].Codigo)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            if (txtNombre.Text == String.Empty)
+            if (comVac())
             {
-                btnEditar.Enabled = false;
+                MessageBox.Show("No se pueden dejar campos vacíos");
                 return;
             }
             if (dgvTareas.SelectedRows.Count > 0)
             {
-                int index = dgvTareas.SelectedRows[0].Index;
+                int index = retIndiceCod();
+                if (index == -1)
+                {
+                    MessageBox.Show("Error al encontrar el índice de la tarea seleccionada. Posiblemente escribió mal su código de Tarea");
+                    return;
+                }
                 listaTareas[index].Codigo = txtCodigo.Text;
                 listaTareas[index].Nombre = txtNombre.Text;
                 listaTareas[index].Descripcion = txtDescripcion.Text;
@@ -99,6 +147,7 @@ namespace Tarea3_Prog_Vis_I
                 btnEliminar.Enabled = false;
                 btnEditar.Enabled = false;
             }
+            limpCamp();
         }
         void limpBus()
         {
@@ -120,10 +169,17 @@ namespace Tarea3_Prog_Vis_I
         {
             if (dgvTareas.SelectedRows.Count > 0)
             {
-                int index = dgvTareas.SelectedRows[0].Index;
+                int index = retIndiceCod();
+                if (index == -1)
+                {
+                    MessageBox.Show("Error al encontrar el índice de la tarea seleccionada. Posiblemente escribió mal su código de Tarea");
+                    return;
+                }
                 listaTareas.RemoveAt(index);
                 ActualizarGrid();
                 MessageBox.Show("Tarea eliminada correctamente.");
+                btnEditar.Enabled = false;
+                btnEliminar.Enabled = false;
                 btnAgregar.Enabled = true;
             }
             if (listaTareas.Count == 0)
@@ -147,6 +203,8 @@ namespace Tarea3_Prog_Vis_I
                 cmbEstado.Text = dgvTareas.Rows[e.RowIndex].Cells[5].Value.ToString();
                 btnEditar.Enabled = true;
                 btnEliminar.Enabled = true;
+                btnAgregar.Enabled = false;
+                txtCodigo.Enabled = false;
             }
         }
         private void txtCodigo_TextChanged(object sender, EventArgs e)
@@ -243,8 +301,7 @@ namespace Tarea3_Prog_Vis_I
         {
             listaAux.Clear();
             limpCBus.Enabled = true;
-            limpVisor_Click(sender, e);
-            limpC_Click(sender, e);
+            limpVis();
             //ActualizarGrid();
             if (txtBusCod.Enabled)
             {
@@ -253,7 +310,7 @@ namespace Tarea3_Prog_Vis_I
                     if (txtBusCod.Text == listaTareas[i].Codigo)
                     {
                         listaAux.Add(listaTareas[i]);
-                        MessageBox.Show("Encontrado y viualizado en el visor de datos");
+                        MessageBox.Show("Encontrado y visualizado en el visor de datos");
                         ActualizarGrid(listaAux);
                         limpBus();
                         return;
@@ -273,7 +330,7 @@ namespace Tarea3_Prog_Vis_I
                 }
                 if(listaAux.Count > 0)
                 {
-                    MessageBox.Show("Datos Encontrados y viualizados en el visor de datos");
+                    MessageBox.Show("Datos Encontrados y visualizados en el visor de datos");
                     ActualizarGrid(listaAux);
                     limpBus();
                     return;
@@ -290,12 +347,12 @@ namespace Tarea3_Prog_Vis_I
                 }
                 if (listaAux.Count > 0)
                 {
-                    MessageBox.Show("Datos Encontrados y viualizados en el visor de datos");
+                    MessageBox.Show("Datos Encontrados y visualizados en el visor de datos");
                     ActualizarGrid(listaAux);
                     limpBus();
                     return;
                 }
-                MessageBox.Show($"No se encontró ninguna tarea con entre el {dtpBusFMin.Value.ToString()} y {dtpBusFMax.Value.ToString()}");
+                MessageBox.Show($"No se encontró ninguna tarea con fecha entre el {dtpBusFMin.Value.ToString()} y {dtpBusFMax.Value.ToString()}");
             }
             limpBus();
         }            

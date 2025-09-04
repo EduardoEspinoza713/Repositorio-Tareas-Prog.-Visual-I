@@ -229,7 +229,7 @@
             this.dgvTareas.RowHeadersWidth = 51;
             this.dgvTareas.RowTemplate.Height = 24;
             this.dgvTareas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvTareas.Size = new System.Drawing.Size(471, 396);
+            this.dgvTareas.Size = new System.Drawing.Size(705, 396);
             this.dgvTareas.TabIndex = 15;
             this.dgvTareas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTareas_CellClick);
             // 
@@ -384,7 +384,7 @@
             // limpVisor
             // 
             this.limpVisor.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.limpVisor.Location = new System.Drawing.Point(581, 455);
+            this.limpVisor.Location = new System.Drawing.Point(682, 463);
             this.limpVisor.Name = "limpVisor";
             this.limpVisor.Size = new System.Drawing.Size(145, 59);
             this.limpVisor.TabIndex = 19;
@@ -396,7 +396,7 @@
             // 
             this.limpT.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.limpT.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.limpT.Location = new System.Drawing.Point(431, 455);
+            this.limpT.Location = new System.Drawing.Point(491, 463);
             this.limpT.Name = "limpT";
             this.limpT.Size = new System.Drawing.Size(144, 59);
             this.limpT.TabIndex = 20;
@@ -431,7 +431,7 @@
             // 
             this.VisorTitulo.AutoSize = true;
             this.VisorTitulo.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VisorTitulo.Location = new System.Drawing.Point(591, 3);
+            this.VisorTitulo.Location = new System.Drawing.Point(678, 3);
             this.VisorTitulo.Name = "VisorTitulo";
             this.VisorTitulo.Size = new System.Drawing.Size(123, 20);
             this.VisorTitulo.TabIndex = 23;
@@ -440,7 +440,7 @@
             // btnMTodo
             // 
             this.btnMTodo.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnMTodo.Location = new System.Drawing.Point(732, 455);
+            this.btnMTodo.Location = new System.Drawing.Point(884, 463);
             this.btnMTodo.Name = "btnMTodo";
             this.btnMTodo.Size = new System.Drawing.Size(145, 59);
             this.btnMTodo.TabIndex = 24;
@@ -452,7 +452,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(921, 586);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(1139, 586);
             this.Controls.Add(this.btnMTodo);
             this.Controls.Add(this.VisorTitulo);
             this.Controls.Add(this.limpCBus);
