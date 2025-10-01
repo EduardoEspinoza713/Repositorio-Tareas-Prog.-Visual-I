@@ -1,0 +1,14 @@
+C:\Users\ECEP\source\repos\Tarea5_Prog_Vis_I\Tarea5_Prog_Vis_I\bin\Debug\Tarea5_Prog_Vis_I.exe.config
+C:\Users\ECEP\source\repos\Tarea5_Prog_Vis_I\Tarea5_Prog_Vis_I\bin\Debug\Tarea5_Prog_Vis_I.exe
+C:\Users\ECEP\source\repos\Tarea5_Prog_Vis_I\Tarea5_Prog_Vis_I\bin\Debug\Tarea5_Prog_Vis_I.pdb
+C:\Users\ECEP\source\repos\Tarea5_Prog_Vis_I\Tarea5_Prog_Vis_I\obj\Debug\Tarea5_Prog_Vis_I.csproj.AssemblyReference.cache
+C:\Users\ECEP\source\repos\Tarea5_Prog_Vis_I\Tarea5_Prog_Vis_I\obj\Debug\Tarea5_Prog_Vis_I.Form1.resources
+C:\Users\ECEP\source\repos\Tarea5_Prog_Vis_I\Tarea5_Prog_Vis_I\obj\Debug\Tarea5_Prog_Vis_I.Form2.resources
+C:\Users\ECEP\source\repos\Tarea5_Prog_Vis_I\Tarea5_Prog_Vis_I\obj\Debug\Tarea5_Prog_Vis_I.Form3.resources
+C:\Users\ECEP\source\repos\Tarea5_Prog_Vis_I\Tarea5_Prog_Vis_I\obj\Debug\Tarea5_Prog_Vis_I.Properties.Resources.resources
+C:\Users\ECEP\source\repos\Tarea5_Prog_Vis_I\Tarea5_Prog_Vis_I\obj\Debug\Tarea5_Prog_Vis_I.csproj.GenerateResource.cache
+C:\Users\ECEP\source\repos\Tarea5_Prog_Vis_I\Tarea5_Prog_Vis_I\obj\Debug\Tarea5_Prog_Vis_I.csproj.CoreCompileInputs.cache
+C:\Users\ECEP\source\repos\Tarea5_Prog_Vis_I\Tarea5_Prog_Vis_I\obj\Debug\Tarea5_Prog_Vis_I.exe
+C:\Users\ECEP\source\repos\Tarea5_Prog_Vis_I\Tarea5_Prog_Vis_I\obj\Debug\Tarea5_Prog_Vis_I.pdb
+C:\Users\ECEP\source\repos\Tarea5_Prog_Vis_I\Tarea5_Prog_Vis_I\obj\Debug\Tarea5_Prog_Vis_I.exe.config
+C:\Users\ECEP\source\repos\Tarea5_Prog_Vis_I\Tarea5_Prog_Vis_I\obj\Debug\Tarea5_Prog_Vis_I.Form4.resources
