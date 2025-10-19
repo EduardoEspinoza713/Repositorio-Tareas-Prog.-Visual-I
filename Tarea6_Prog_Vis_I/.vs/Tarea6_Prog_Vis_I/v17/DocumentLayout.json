@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ECEP\\source\\repos\\Tarea6_Prog_Vis_I\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9FFDE9-0889-4CF0-BA1B-3BE0AC9262C7}|Tarea6_Prog_Vis_I\\Tarea6_Prog_Vis_I.csproj|C:\\Users\\ECEP\\source\\repos\\Tarea6_Prog_Vis_I\\tarea6_prog_vis_i\\word.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9FFDE9-0889-4CF0-BA1B-3BE0AC9262C7}|Tarea6_Prog_Vis_I\\Tarea6_Prog_Vis_I.csproj|solutionrelative:tarea6_prog_vis_i\\word.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9FFDE9-0889-4CF0-BA1B-3BE0AC9262C7}|Tarea6_Prog_Vis_I\\Tarea6_Prog_Vis_I.csproj|c:\\users\\ecep\\source\\repos\\tarea6_prog_vis_i\\tarea6_prog_vis_i\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9FFDE9-0889-4CF0-BA1B-3BE0AC9262C7}|Tarea6_Prog_Vis_I\\Tarea6_Prog_Vis_I.csproj|solutionrelative:tarea6_prog_vis_i\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9FFDE9-0889-4CF0-BA1B-3BE0AC9262C7}|Tarea6_Prog_Vis_I\\Tarea6_Prog_Vis_I.csproj|C:\\Users\\ECEP\\source\\repos\\Tarea6_Prog_Vis_I\\tarea6_prog_vis_i\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9FFDE9-0889-4CF0-BA1B-3BE0AC9262C7}|Tarea6_Prog_Vis_I\\Tarea6_Prog_Vis_I.csproj|solutionrelative:tarea6_prog_vis_i\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9FFDE9-0889-4CF0-BA1B-3BE0AC9262C7}|Tarea6_Prog_Vis_I\\Tarea6_Prog_Vis_I.csproj|C:\\Users\\ECEP\\source\\repos\\Tarea6_Prog_Vis_I\\tarea6_prog_vis_i\\exphilobgw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9FFDE9-0889-4CF0-BA1B-3BE0AC9262C7}|Tarea6_Prog_Vis_I\\Tarea6_Prog_Vis_I.csproj|solutionrelative:tarea6_prog_vis_i\\exphilobgw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9FFDE9-0889-4CF0-BA1B-3BE0AC9262C7}|Tarea6_Prog_Vis_I\\Tarea6_Prog_Vis_I.csproj|C:\\Users\\ECEP\\source\\repos\\Tarea6_Prog_Vis_I\\tarea6_prog_vis_i\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EC9FFDE9-0889-4CF0-BA1B-3BE0AC9262C7}|Tarea6_Prog_Vis_I\\Tarea6_Prog_Vis_I.csproj|solutionrelative:tarea6_prog_vis_i\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExpHiloBGW.cs",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea6_Prog_Vis_I\\Tarea6_Prog_Vis_I\\ExpHiloBGW.cs",
+              "RelativeDocumentMoniker": "Tarea6_Prog_Vis_I\\ExpHiloBGW.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea6_Prog_Vis_I\\Tarea6_Prog_Vis_I\\ExpHiloBGW.cs",
+              "RelativeToolTip": "Tarea6_Prog_Vis_I\\ExpHiloBGW.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwDAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T07:25:09.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Word.cs",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea6_Prog_Vis_I\\Tarea6_Prog_Vis_I\\Word.cs",
+              "RelativeDocumentMoniker": "Tarea6_Prog_Vis_I\\Word.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea6_Prog_Vis_I\\Tarea6_Prog_Vis_I\\Word.cs",
+              "RelativeToolTip": "Tarea6_Prog_Vis_I\\Word.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwA0AAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T13:36:45.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea6_Prog_Vis_I\\Tarea6_Prog_Vis_I\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Tarea6_Prog_Vis_I\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea6_Prog_Vis_I\\Tarea6_Prog_Vis_I\\Form1.Designer.cs",
+              "RelativeToolTip": "Tarea6_Prog_Vis_I\\Form1.Designer.cs",
+              "ViewState": "AgIAAEABAAAAAAAAAAAtwBIBAACRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T14:28:37.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea6_Prog_Vis_I\\Tarea6_Prog_Vis_I\\Form1.cs",
+              "RelativeDocumentMoniker": "Tarea6_Prog_Vis_I\\Form1.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea6_Prog_Vis_I\\Tarea6_Prog_Vis_I\\Form1.cs",
+              "RelativeToolTip": "Tarea6_Prog_Vis_I\\Form1.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAQwEEAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T13:37:37.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea6_Prog_Vis_I\\Tarea6_Prog_Vis_I\\Form1.cs",
+              "RelativeDocumentMoniker": "Tarea6_Prog_Vis_I\\Form1.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea6_Prog_Vis_I\\Tarea6_Prog_Vis_I\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Tarea6_Prog_Vis_I\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T13:28:07.166Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
