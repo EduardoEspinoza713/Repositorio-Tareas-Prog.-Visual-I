@@ -15,11 +15,27 @@ namespace Tarea6_Prog_Vis_I
         public static ConditionalWeakTable<BackgroundWorker, Thread> bgwSubH = new ConditionalWeakTable<BackgroundWorker, Thread>();
         public static void Aggsubhilo(this Thread hilo, Thread sub)
         {
-            subhilo.Add(hilo, sub);
+            try
+            {
+                subhilo.Add(hilo, sub);
+            }
+            catch (Exception w)
+            {
+                subhilo.Remove(hilo);
+                subhilo.Add(hilo, sub);
+            }
         }
         public static void Aggsubhilo(this BackgroundWorker BGW, Thread sub)
         {
-            bgwSubH.Add(BGW, sub);
+            try
+            {
+                bgwSubH.Add(BGW, sub);
+            }
+            catch (Exception w)
+            {
+                bgwSubH.Remove(BGW);
+                bgwSubH.Add(BGW, sub);
+            }
         }
         public static Thread miSubhilo(this Thread hilo)
         {

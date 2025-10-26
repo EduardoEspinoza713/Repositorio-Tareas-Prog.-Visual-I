@@ -26,8 +26,8 @@ namespace Tarea6_Prog_Vis_I
         private List<int> listaMS;
         private List<List<int>> colaQuick = new List<List<int>>();
         private List<List<int>> colaMS = new List<List<int>>();
-        private List<int> progresoQ = new List<int>();
-        private List<int> progresoMS = new List<int>();
+        private List<string> progresoQ = new List<string>();
+        private List<string> progresoMS = new List<string>();
         private Thread hiloBurbuja;
         private Thread hiloMS;
         private Stopwatch relojBurbuja = new Stopwatch();
@@ -46,8 +46,8 @@ namespace Tarea6_Prog_Vis_I
             hB = hQ = hM = hS = 0;
             estB = estQ = estM = estS = 0;
         }
-        public delegate void escribir(string aux, List<List<int>> lista, List<int> progreso, ref int est);
-        private void Esc (string nombreArch, List<List<int>> numeros, List<int> Progreso, ref int est)
+        public delegate void escribir(string aux, List<List<int>> lista, List<string> progreso, ref int est);
+        private void Esc (string nombreArch, List<List<int>> numeros, List<string> Progreso, ref int est)
         {
             int cont = 0;
             int cp = 0;
@@ -71,7 +71,24 @@ namespace Tarea6_Prog_Vis_I
                 }
                 if (fin && (cont==numeros.Count))
                 {
+                    if (nombreArch == "Burbuja")
+                    {
+                        estdB.BackColor = Color.Green;
+                    }
+                    if (nombreArch == "Quicksort")
+                    {
+                        estdQ.BackColor = Color.Green;
+                    }
+                    if (nombreArch == "MergeSort")
+                    {
+                        estdM.BackColor = Color.Green;
+                    }
+                    if (nombreArch == "SelectionSort")
+                    {
+                        estdS.BackColor = Color.Green;
+                    }
                     MessageBox.Show($"Documento {nombreArch}.doc guardado en el escritorio.");
+                    est= 0;
                     break;
                 }
             }
@@ -109,6 +126,7 @@ namespace Tarea6_Prog_Vis_I
         private void btnQuickSort_Click(object sender, EventArgs e)
         {
             Word.EliminarDocumentoDeWord("Quicksort");
+            estdQ.Visible = true;
             listaQuick = new List<int>(listaOriginal);
             btnQuicksortDC.Enabled = true;
             btnNum.Enabled = false;
@@ -121,7 +139,7 @@ namespace Tarea6_Prog_Vis_I
             backgroundWorkerQuickSort.RunWorkerAsync();
             escribir escQ = new escribir(Esc);
             colaQuick.Add(new List<int>(listaQuick));
-            progresoQ.Add(0);
+            progresoQ.Add("Original");
             Thread hEscQ = new Thread(() => escQ("Quicksort", colaQuick, progresoQ, ref estQ));
             backgroundWorkerQuickSort.Aggsubhilo(hEscQ);
             (backgroundWorkerQuickSort.miSubhilo()).Start();
@@ -159,7 +177,7 @@ namespace Tarea6_Prog_Vis_I
                     else
                     {
                         pbQuicksort.Value = Math.Min(progreso, 100);
-                        progresoQ.Add(progreso);
+                        progresoQ.Add(progreso.ToString());
                         colaQuick.Add(new List<int>(lista));
                     }
                     txtQS($"Quicksort: {progreso}%");
@@ -200,7 +218,7 @@ namespace Tarea6_Prog_Vis_I
             {
                 hQ = 0;
                 pbQuicksort.Value = 100;
-                progresoQ.Add(100);
+                progresoQ.Add("100");
                 colaQuick.Add(new List<int>(listaQuick));
                 estQ = 2;
                 lblQuicksort.Text = $"Comp. en {relojQuick.ElapsedMilliseconds}ms";
@@ -212,6 +230,7 @@ namespace Tarea6_Prog_Vis_I
 
         private void backgroundWorkerQuickSort_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
+            estdQ.BackColor = Color.Yellow;
             MessageBox.Show("Ordenado por quicksort, salida guardada en escritorio");
             
         }
@@ -254,7 +273,7 @@ namespace Tarea6_Prog_Vis_I
             int[] aux = new int[listaMS.Count];
             escribir escMS = new escribir(Esc);
             colaMS.Add(new List<int>(listaMS));
-            progresoMS.Add(0);
+            progresoMS.Add("Original");
             Thread hEscMS = new Thread(() => escMS("MergeSort", colaMS, progresoMS, ref estM));
             hiloMS.Aggsubhilo(hEscMS);
             (hiloMS.miSubhilo()).Start();
@@ -263,7 +282,7 @@ namespace Tarea6_Prog_Vis_I
             this.Invoke(new Action(() =>
             {
                 pbMergeSort.Value = 100;
-                progresoMS.Add(100);
+                progresoMS.Add("100");
                 colaMS.Add(new List<int>(listaMS));
                 btnMergeSortDC.Enabled = false;
                 hM = 0;
@@ -271,6 +290,7 @@ namespace Tarea6_Prog_Vis_I
                 lblMergeSort.Text = $"Comp. en {relojMerge.ElapsedMilliseconds}ms";
                 //impOrd(listaMS);
                 estM = 2;
+                estdM.BackColor = Color.Yellow;
                 MessageBox.Show("Ordenado por MergeSort, salida a ser guardada en escritorio");
                 MS = true;
             }));
@@ -312,7 +332,7 @@ namespace Tarea6_Prog_Vis_I
                 indPrin++;
                 if(cont % 1000 == 0){
                         int progreso = (int)((indPrin / (float)lista.Count) * 100);
-                        progresoMS.Add(progreso);
+                        progresoMS.Add("A "+progreso.ToString());
                         colaMS.Add(new List<int>(lista));
                         this.Invoke(new Action(() =>
                         {
@@ -330,7 +350,7 @@ namespace Tarea6_Prog_Vis_I
                 if (cont % 1000 == 0)
                 {
                     int progreso = (int)((indPrin / (float)lista.Count) * 100);
-                    progresoMS.Add(progreso);
+                    progresoMS.Add("B "+progreso.ToString());
                     colaMS.Add(new List<int>(lista));
                     this.Invoke(new Action(() =>
                     {
@@ -443,6 +463,8 @@ namespace Tarea6_Prog_Vis_I
         private void btnMergeSort_Click(object sender, EventArgs e)
         {
             btnNum.Enabled = false;
+            Word.EliminarDocumentoDeWord("MergeSort");
+            estdM.Visible = true;
             btnMergeSortDC.Enabled = true;
             MS = false;
             btnMergeSort.Enabled = false;
@@ -480,8 +502,8 @@ namespace Tarea6_Prog_Vis_I
             escribir escSS = new escribir(Esc);
             colaSS.Add(new List<int>(listaSS));
             estS = 0;
-            List<int> progresoSS = new List<int>();
-            progresoSS.Add(0);
+            List<string> progresoSS = new List<string>();
+            progresoSS.Add("Original");
             Thread hEscSS = new Thread(() => escSS("SelectionSort", colaSS, progresoSS, ref estS));
             backgroundWorkerSelectionSort.Aggsubhilo(hEscSS);
             (backgroundWorkerSelectionSort.miSubhilo()).Start();
@@ -506,7 +528,7 @@ namespace Tarea6_Prog_Vis_I
                 if (i % 1000 == 0)
                 {
                     int progreso = (int)((i / (float)n) * 100);
-                    progresoSS.Add(progreso);
+                    progresoSS.Add(progreso.ToString());
                     this.Invoke(new Action(() =>
                     {
                         pbSelectionSort.Value = Math.Min(progreso, 100);
@@ -518,7 +540,7 @@ namespace Tarea6_Prog_Vis_I
             this.Invoke(new Action(() =>
             {
                 pbSelectionSort.Value = 100;
-                progresoSS.Add(100);
+                progresoSS.Add("100");
                 colaSS.Add(new List<int>(listaSS));
                 btnSelectionSortDC.Enabled = false;
                 hS = 0;
@@ -553,7 +575,9 @@ namespace Tarea6_Prog_Vis_I
 
         private void btnSelectionSort_Click(object sender, EventArgs e)
         {
+            Word.EliminarDocumentoDeWord("SelectionSort");
             btnSelectionSortDC.Enabled = true;
+            estdS.Visible = true;
             btnSelectionSort.Enabled = false;
             btnNum.Enabled = false;
             SS = false;
@@ -574,6 +598,7 @@ namespace Tarea6_Prog_Vis_I
                 lblSelectionSort.Text = $"Comp. en {relojSelection.ElapsedMilliseconds}ms";
                 //impOrd(listaSS);
                 btnSelectionSortDC.Enabled = false;*/
+                estdS.BackColor = Color.Yellow;
                 MessageBox.Show("Ordenado por SelectionSort, salida a ser guardada en escritorio");
                 SS= true;
             }));
@@ -608,6 +633,7 @@ namespace Tarea6_Prog_Vis_I
         private void btnBurbuja_Click(object sender, EventArgs e)
         {
             Word.EliminarDocumentoDeWord("Burbuja");
+            estdB.Visible = true;
             listaBurbuja = new List<int>(listaOriginal);
             btnNum.Enabled = false;
             btnBurbujaDC.Enabled = true;
@@ -665,6 +691,14 @@ namespace Tarea6_Prog_Vis_I
             // Copiamos la lista para cada algoritmo
             listaBurbuja = new List<int>(listaOriginal);
             listaQuick = new List<int>(listaOriginal);
+            estdB.Visible = false;
+            estdB.BackColor = Color.Red;
+            estdQ.Visible = false;
+            estdQ.BackColor = Color.Red;
+            estdM.Visible = false;
+            estdM.BackColor = Color.Red;
+            estdS.Visible = false;
+            estdS.BackColor = Color.Red;
         }
         private void OrdenarBurbuja()
         {
@@ -673,8 +707,8 @@ namespace Tarea6_Prog_Vis_I
             List<List<int>> colaBurb= new List<List<int>>();
             escribir escBurb = new escribir(Esc);
             colaBurb.Add(new List<int>(listaBurbuja));
-            List<int>prog=new List<int>();
-            prog.Add(0);
+            List<string>prog=new List<string>();
+            prog.Add("Original");
             Thread hEscBur= new Thread(() => escBurb("Burbuja", colaBurb, prog, ref est));
             hiloBurbuja.Aggsubhilo(hEscBur);
             hEscBur.Start();
@@ -695,7 +729,7 @@ namespace Tarea6_Prog_Vis_I
                 if (i % 1000 == 0)
                 {
                     int progreso = (int)((i / (float)n) * 100);
-                    prog.Add(progreso);
+                    prog.Add(progreso.ToString());
                     this.Invoke(new Action(() =>
                     {
                         pbBurbuja.Value = Math.Min(progreso, 100);
@@ -709,7 +743,7 @@ namespace Tarea6_Prog_Vis_I
             this.Invoke(new Action(() =>
             {
                 pbBurbuja.Value = 100;
-                prog.Add(100);
+                prog.Add("100");
                 btnBurbujaDC.Enabled = false;
                 hB = 0;
                 btnGraf.Enabled = true;
@@ -721,6 +755,7 @@ namespace Tarea6_Prog_Vis_I
             }));
             Burb = true;
             //impOrd(listaBurbuja);
+            estdB.BackColor = Color.Yellow;
             MessageBox.Show("Ordenado por burbuja, salida a ser guardada en escritorio");
         }
         private void nudNumeros_ValueChanged(object sender, EventArgs e)

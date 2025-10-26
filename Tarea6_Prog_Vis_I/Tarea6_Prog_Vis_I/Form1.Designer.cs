@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.btnNum = new System.Windows.Forms.Button();
             this.pbBurbuja = new System.Windows.Forms.ProgressBar();
             this.pbQuicksort = new System.Windows.Forms.ProgressBar();
@@ -54,6 +54,10 @@
             this.backgroundWorkerQuickSort = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorkerSelectionSort = new System.ComponentModel.BackgroundWorker();
             this.btnTotalDC = new System.Windows.Forms.Button();
+            this.estdB = new System.Windows.Forms.Button();
+            this.estdQ = new System.Windows.Forms.Button();
+            this.estdM = new System.Windows.Forms.Button();
+            this.estdS = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.charGraf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumeros)).BeginInit();
             this.SuspendLayout();
@@ -107,16 +111,16 @@
             // 
             // charGraf
             // 
-            chartArea2.Name = "ChartArea1";
-            this.charGraf.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.charGraf.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.charGraf.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.charGraf.Legends.Add(legend1);
             this.charGraf.Location = new System.Drawing.Point(25, 601);
             this.charGraf.Name = "charGraf";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.charGraf.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.charGraf.Series.Add(series1);
             this.charGraf.Size = new System.Drawing.Size(543, 300);
             this.charGraf.TabIndex = 7;
             this.charGraf.Text = "Tiempos de ejecución";
@@ -284,12 +288,60 @@
             this.btnTotalDC.UseVisualStyleBackColor = true;
             this.btnTotalDC.Click += new System.EventHandler(this.btnTotalDC_Click);
             // 
+            // estdB
+            // 
+            this.estdB.BackColor = System.Drawing.Color.Red;
+            this.estdB.Enabled = false;
+            this.estdB.Location = new System.Drawing.Point(54, 154);
+            this.estdB.Name = "estdB";
+            this.estdB.Size = new System.Drawing.Size(32, 31);
+            this.estdB.TabIndex = 23;
+            this.estdB.UseVisualStyleBackColor = false;
+            this.estdB.Visible = false;
+            // 
+            // estdQ
+            // 
+            this.estdQ.BackColor = System.Drawing.Color.Red;
+            this.estdQ.Enabled = false;
+            this.estdQ.Location = new System.Drawing.Point(54, 261);
+            this.estdQ.Name = "estdQ";
+            this.estdQ.Size = new System.Drawing.Size(32, 31);
+            this.estdQ.TabIndex = 24;
+            this.estdQ.UseVisualStyleBackColor = false;
+            this.estdQ.Visible = false;
+            // 
+            // estdM
+            // 
+            this.estdM.BackColor = System.Drawing.Color.Red;
+            this.estdM.Enabled = false;
+            this.estdM.Location = new System.Drawing.Point(54, 373);
+            this.estdM.Name = "estdM";
+            this.estdM.Size = new System.Drawing.Size(32, 31);
+            this.estdM.TabIndex = 25;
+            this.estdM.UseVisualStyleBackColor = false;
+            this.estdM.Visible = false;
+            // 
+            // estdS
+            // 
+            this.estdS.BackColor = System.Drawing.Color.Red;
+            this.estdS.Enabled = false;
+            this.estdS.Location = new System.Drawing.Point(54, 480);
+            this.estdS.Name = "estdS";
+            this.estdS.Size = new System.Drawing.Size(32, 31);
+            this.estdS.TabIndex = 26;
+            this.estdS.UseVisualStyleBackColor = false;
+            this.estdS.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(613, 913);
+            this.Controls.Add(this.estdS);
+            this.Controls.Add(this.estdM);
+            this.Controls.Add(this.estdQ);
+            this.Controls.Add(this.estdB);
             this.Controls.Add(this.btnTotalDC);
             this.Controls.Add(this.btnGraf);
             this.Controls.Add(this.btnSelectionSortDC);
@@ -347,6 +399,10 @@
         private System.ComponentModel.BackgroundWorker backgroundWorkerQuickSort;
         private System.ComponentModel.BackgroundWorker backgroundWorkerSelectionSort;
         private System.Windows.Forms.Button btnTotalDC;
+        private System.Windows.Forms.Button estdB;
+        private System.Windows.Forms.Button estdQ;
+        private System.Windows.Forms.Button estdM;
+        private System.Windows.Forms.Button estdS;
     }
 }
 
