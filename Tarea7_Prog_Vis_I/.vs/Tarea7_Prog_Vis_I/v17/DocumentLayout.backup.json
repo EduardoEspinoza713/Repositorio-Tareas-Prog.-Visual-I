@@ -1,0 +1,368 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\tarea7_prog_vis_i\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|solutionrelative:tarea7_prog_vis_i\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\tarea7_prog_vis_i\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|solutionrelative:tarea7_prog_vis_i\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\tarea7_prog_vis_i\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|solutionrelative:tarea7_prog_vis_i\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\tarea7_prog_vis_i\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|solutionrelative:tarea7_prog_vis_i\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\tarea7_prog_vis_i\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|solutionrelative:tarea7_prog_vis_i\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|c:\\users\\ecep\\source\\repos\\tarea7_prog_vis_i\\tarea7_prog_vis_i\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|solutionrelative:tarea7_prog_vis_i\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|c:\\users\\ecep\\source\\repos\\tarea7_prog_vis_i\\tarea7_prog_vis_i\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|solutionrelative:tarea7_prog_vis_i\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|c:\\users\\ecep\\source\\repos\\tarea7_prog_vis_i\\tarea7_prog_vis_i\\aboutbox1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|solutionrelative:tarea7_prog_vis_i\\aboutbox1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|c:\\users\\ecep\\source\\repos\\tarea7_prog_vis_i\\tarea7_prog_vis_i\\aboutbox1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|solutionrelative:tarea7_prog_vis_i\\aboutbox1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\tarea7_prog_vis_i\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|solutionrelative:tarea7_prog_vis_i\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\tarea7_prog_vis_i\\misclases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|solutionrelative:tarea7_prog_vis_i\\misclases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\tarea7_prog_vis_i\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|solutionrelative:tarea7_prog_vis_i\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|c:\\users\\ecep\\source\\repos\\tarea7_prog_vis_i\\tarea7_prog_vis_i\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|solutionrelative:tarea7_prog_vis_i\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\tarea7_prog_vis_i\\form4.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|solutionrelative:tarea7_prog_vis_i\\form4.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\tarea7_prog_vis_i\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|solutionrelative:tarea7_prog_vis_i\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\tarea7_prog_vis_i\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|solutionrelative:tarea7_prog_vis_i\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\tarea7_prog_vis_i\\dataclasses1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|solutionrelative:tarea7_prog_vis_i\\dataclasses1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\tarea7_prog_vis_i\\dataclasses1.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
+      "RelativeMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|solutionrelative:tarea7_prog_vis_i\\dataclasses1.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\tarea7_prog_vis_i\\form3.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|solutionrelative:tarea7_prog_vis_i\\form3.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\tarea7_prog_vis_i\\form3.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|solutionrelative:tarea7_prog_vis_i\\form3.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\tarea7_prog_vis_i\\form2.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{B49EE03F-0221-462A-8595-83B9944A66D4}|Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I.csproj|solutionrelative:tarea7_prog_vis_i\\form2.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form5.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form5.cs",
+              "RelativeDocumentMoniker": "Tarea7_Prog_Vis_I\\Form5.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form5.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Tarea7_Prog_Vis_I\\Form5.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T06:37:48.872Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Program.cs",
+              "RelativeDocumentMoniker": "Tarea7_Prog_Vis_I\\Program.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Program.cs",
+              "RelativeToolTip": "Tarea7_Prog_Vis_I\\Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAlwBIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T05:21:29.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AboutBox1.cs",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\AboutBox1.cs",
+              "RelativeDocumentMoniker": "Tarea7_Prog_Vis_I\\AboutBox1.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\AboutBox1.cs",
+              "RelativeToolTip": "Tarea7_Prog_Vis_I\\AboutBox1.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwBAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T07:45:06.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form2.cs",
+              "RelativeDocumentMoniker": "Tarea7_Prog_Vis_I\\Form2.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form2.cs",
+              "RelativeToolTip": "Tarea7_Prog_Vis_I\\Form2.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAswCEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T05:21:01.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form1.cs",
+              "RelativeDocumentMoniker": "Tarea7_Prog_Vis_I\\Form1.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form1.cs",
+              "RelativeToolTip": "Tarea7_Prog_Vis_I\\Form1.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAEwB4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T13:54:14.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form2.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form2.Designer.cs",
+              "RelativeDocumentMoniker": "Tarea7_Prog_Vis_I\\Form2.Designer.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form2.Designer.cs",
+              "RelativeToolTip": "Tarea7_Prog_Vis_I\\Form2.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T06:18:06.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MisClases.cs",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\MisClases.cs",
+              "RelativeDocumentMoniker": "Tarea7_Prog_Vis_I\\MisClases.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\MisClases.cs",
+              "RelativeToolTip": "Tarea7_Prog_Vis_I\\MisClases.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAmwCAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T05:21:35.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form2.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form2.cs",
+              "RelativeDocumentMoniker": "Tarea7_Prog_Vis_I\\Form2.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form2.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Tarea7_Prog_Vis_I\\Form2.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T05:16:27.271Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form1.cs",
+              "RelativeDocumentMoniker": "Tarea7_Prog_Vis_I\\Form1.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Tarea7_Prog_Vis_I\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T13:46:20.973Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form5.cs",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form5.cs",
+              "RelativeDocumentMoniker": "Tarea7_Prog_Vis_I\\Form5.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form5.cs",
+              "RelativeToolTip": "Tarea7_Prog_Vis_I\\Form5.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAmwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T06:39:50.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AboutBox1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\AboutBox1.cs",
+              "RelativeDocumentMoniker": "Tarea7_Prog_Vis_I\\AboutBox1.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\AboutBox1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Tarea7_Prog_Vis_I\\AboutBox1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T07:44:20.626Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Form4.cs",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form4.cs",
+              "RelativeDocumentMoniker": "Tarea7_Prog_Vis_I\\Form4.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form4.cs",
+              "RelativeToolTip": "Tarea7_Prog_Vis_I\\Form4.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAiwEYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T05:58:13.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Form3.cs",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form3.cs",
+              "RelativeDocumentMoniker": "Tarea7_Prog_Vis_I\\Form3.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form3.cs",
+              "RelativeToolTip": "Tarea7_Prog_Vis_I\\Form3.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAmwK0AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T05:29:18.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Form3.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form3.cs",
+              "RelativeDocumentMoniker": "Tarea7_Prog_Vis_I\\Form3.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form3.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Tarea7_Prog_Vis_I\\Form3.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T05:28:24.862Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Form4.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form4.cs",
+              "RelativeDocumentMoniker": "Tarea7_Prog_Vis_I\\Form4.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form4.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Tarea7_Prog_Vis_I\\Form4.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T05:58:06.406Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Form4.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form4.Designer.cs",
+              "RelativeDocumentMoniker": "Tarea7_Prog_Vis_I\\Form4.Designer.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form4.Designer.cs",
+              "RelativeToolTip": "Tarea7_Prog_Vis_I\\Form4.Designer.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T05:58:59.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DataClasses1.designer.cs",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\DataClasses1.designer.cs",
+              "RelativeDocumentMoniker": "Tarea7_Prog_Vis_I\\DataClasses1.designer.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\DataClasses1.designer.cs",
+              "RelativeToolTip": "Tarea7_Prog_Vis_I\\DataClasses1.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsCAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T03:13:25.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DataClasses1.dbml",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\DataClasses1.dbml",
+              "RelativeDocumentMoniker": "Tarea7_Prog_Vis_I\\DataClasses1.dbml",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\DataClasses1.dbml",
+              "RelativeToolTip": "Tarea7_Prog_Vis_I\\DataClasses1.dbml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
+              "WhenOpened": "2025-11-03T01:38:40.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Form3.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form3.Designer.cs",
+              "RelativeDocumentMoniker": "Tarea7_Prog_Vis_I\\Form3.Designer.cs",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form3.Designer.cs",
+              "RelativeToolTip": "Tarea7_Prog_Vis_I\\Form3.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T06:18:07.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Form2.resx",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form2.resx",
+              "RelativeDocumentMoniker": "Tarea7_Prog_Vis_I\\Form2.resx",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form2.resx",
+              "RelativeToolTip": "Tarea7_Prog_Vis_I\\Form2.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-10-29T06:18:06.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Form3.resx",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form3.resx",
+              "RelativeDocumentMoniker": "Tarea7_Prog_Vis_I\\Form3.resx",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\Tarea7_Prog_Vis_I\\Tarea7_Prog_Vis_I\\Form3.resx",
+              "RelativeToolTip": "Tarea7_Prog_Vis_I\\Form3.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-10-29T06:18:07.581Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
