@@ -38,16 +38,19 @@ Partial Class Form3
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripSeparator()
         Me.SaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AdmUs = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NuevaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CompraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BarraHerramientas.SuspendLayout()
         Me.SuspendLayout()
         '
         'BarraHerramientas
         '
         Me.BarraHerramientas.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.BarraHerramientas.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CatálogosToolStripMenuItem, Me.ExistenciasToolStripMenuItem, Me.OtrasOpcionesToolStripMenuItem})
+        Me.BarraHerramientas.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CatálogosToolStripMenuItem, Me.ExistenciasToolStripMenuItem, Me.OtrasOpcionesToolStripMenuItem, Me.NuevaToolStripMenuItem})
         Me.BarraHerramientas.Location = New System.Drawing.Point(0, 0)
         Me.BarraHerramientas.Name = "BarraHerramientas"
-        Me.BarraHerramientas.Size = New System.Drawing.Size(800, 30)
+        Me.BarraHerramientas.Size = New System.Drawing.Size(800, 28)
         Me.BarraHerramientas.TabIndex = 0
         Me.BarraHerramientas.Text = "MenuStrip1"
         '
@@ -55,7 +58,7 @@ Partial Class Form3
         '
         Me.CatálogosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.ProveedoresToolStripMenuItem})
         Me.CatálogosToolStripMenuItem.Name = "CatálogosToolStripMenuItem"
-        Me.CatálogosToolStripMenuItem.Size = New System.Drawing.Size(90, 24)
+        Me.CatálogosToolStripMenuItem.Size = New System.Drawing.Size(90, 26)
         Me.CatálogosToolStripMenuItem.Text = "Catálogos"
         '
         'ProductosToolStripMenuItem
@@ -116,7 +119,7 @@ Partial Class Form3
         '
         Me.OtrasOpcionesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExistenciasAlMínimoToolStripMenuItem, Me.ToolStripMenuItem2, Me.SaToolStripMenuItem, Me.AdmUs})
         Me.OtrasOpcionesToolStripMenuItem.Name = "OtrasOpcionesToolStripMenuItem"
-        Me.OtrasOpcionesToolStripMenuItem.Size = New System.Drawing.Size(124, 26)
+        Me.OtrasOpcionesToolStripMenuItem.Size = New System.Drawing.Size(124, 24)
         Me.OtrasOpcionesToolStripMenuItem.Text = "Otras Opciones"
         '
         'ExistenciasAlMínimoToolStripMenuItem
@@ -142,13 +145,31 @@ Partial Class Form3
         Me.AdmUs.Size = New System.Drawing.Size(234, 26)
         Me.AdmUs.Text = "Administrar Usuarios"
         '
+        'NuevaToolStripMenuItem
+        '
+        Me.NuevaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VentaToolStripMenuItem, Me.CompraToolStripMenuItem})
+        Me.NuevaToolStripMenuItem.Name = "NuevaToolStripMenuItem"
+        Me.NuevaToolStripMenuItem.Size = New System.Drawing.Size(65, 24)
+        Me.NuevaToolStripMenuItem.Text = "Nueva"
+        '
+        'VentaToolStripMenuItem
+        '
+        Me.VentaToolStripMenuItem.Name = "VentaToolStripMenuItem"
+        Me.VentaToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.VentaToolStripMenuItem.Text = "Venta"
+        '
+        'CompraToolStripMenuItem
+        '
+        Me.CompraToolStripMenuItem.Name = "CompraToolStripMenuItem"
+        Me.CompraToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.CompraToolStripMenuItem.Text = "Compra"
+        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.BarraHerramientas)
-        Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.BarraHerramientas
         Me.Name = "Form3"
         Me.Text = "Gestor Tienda"
@@ -175,4 +196,7 @@ Partial Class Form3
     Friend WithEvents ToolStripMenuItem2 As ToolStripSeparator
     Friend WithEvents SaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AdmUs As ToolStripMenuItem
+    Friend WithEvents NuevaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents VentaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CompraToolStripMenuItem As ToolStripMenuItem
 End Class

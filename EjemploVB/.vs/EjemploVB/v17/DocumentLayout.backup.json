@@ -3,28 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\module1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\module1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|c:\\users\\ecep\\source\\repos\\ejemplovb\\ejemplovb\\compras.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\compras.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|c:\\users\\ecep\\source\\repos\\ejemplovb\\ejemplovb\\compras.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\compras.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|c:\\users\\ecep\\source\\repos\\ejemplovb\\ejemplovb\\ventas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\ventas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|c:\\users\\ecep\\source\\repos\\ejemplovb\\ejemplovb\\ventas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\ventas.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form4.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form4.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|c:\\users\\ecep\\source\\repos\\ejemplovb\\ejemplovb\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form4.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form4.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form8.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form8.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form8.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form8.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form5.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form5.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form5.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form5.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form5.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form5.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form6.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -35,48 +67,40 @@
       "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form6.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form4.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form4.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form4.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form4.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|c:\\users\\ecep\\source\\repos\\ejemplovb\\ejemplovb\\module1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\module1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form7.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form7.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form8.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form8.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form7.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form7.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form5.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form5.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form8.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form8.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form5.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form5.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form10.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form10.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form5.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form5.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form10.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form10.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|C:\\Users\\ECEP\\source\\repos\\EjemploVB\\ejemplovb\\form4.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1A342526-C1E3-4ECF-A1E8-477F38DC05DD}|EjemploVB\\EjemploVB.vbproj|solutionrelative:ejemplovb\\form4.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -89,93 +113,311 @@
           "SelectedChildIndex": 6,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Ventas.vb",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Ventas.vb",
+              "RelativeDocumentMoniker": "EjemploVB\\Ventas.vb",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Ventas.vb",
+              "RelativeToolTip": "EjemploVB\\Ventas.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-09T08:46:15.56Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Form6.vb",
-              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form6.vb",
-              "RelativeDocumentMoniker": "EjemploVB\\Form6.vb",
-              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form6.vb",
-              "RelativeToolTip": "EjemploVB\\Form6.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAALAAAAAAAAAA==",
+              "Title": "Ventas.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Ventas.vb",
+              "RelativeDocumentMoniker": "EjemploVB\\Ventas.vb",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Ventas.vb [Dise\u00F1o]",
+              "RelativeToolTip": "EjemploVB\\Ventas.vb [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-26T22:17:59.023Z"
+              "WhenOpened": "2025-11-09T08:44:42.321Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Compras.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Compras.vb",
+              "RelativeDocumentMoniker": "EjemploVB\\Compras.vb",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Compras.vb [Dise\u00F1o]",
+              "RelativeToolTip": "EjemploVB\\Compras.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-09T08:44:37.985Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form3.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form3.vb",
+              "RelativeDocumentMoniker": "EjemploVB\\Form3.vb",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form3.vb [Dise\u00F1o]",
+              "RelativeToolTip": "EjemploVB\\Form3.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-26T04:14:57.247Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Form3.vb",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form3.vb",
+              "RelativeDocumentMoniker": "EjemploVB\\Form3.vb",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form3.vb",
+              "RelativeToolTip": "EjemploVB\\Form3.vb",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAmwGIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-26T04:24:15.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Form2.vb",
               "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form2.vb",
               "RelativeDocumentMoniker": "EjemploVB\\Form2.vb",
               "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form2.vb",
               "RelativeToolTip": "EjemploVB\\Form2.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-10-21T15:35:11.829Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "Compras.vb",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Compras.vb",
+              "RelativeDocumentMoniker": "EjemploVB\\Compras.vb",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Compras.vb",
+              "RelativeToolTip": "EjemploVB\\Compras.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-09T08:46:56.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form4.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form4.vb",
+              "RelativeDocumentMoniker": "EjemploVB\\Form4.vb",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form4.vb [Dise\u00F1o]",
+              "RelativeToolTip": "EjemploVB\\Form4.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-26T05:00:57.382Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Form6.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form6.vb",
+              "RelativeDocumentMoniker": "EjemploVB\\Form6.vb",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form6.vb [Dise\u00F1o]",
+              "RelativeToolTip": "EjemploVB\\Form6.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-26T22:14:10.772Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Form1.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form1.vb",
+              "RelativeDocumentMoniker": "EjemploVB\\Form1.vb",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form1.vb [Dise\u00F1o]",
+              "RelativeToolTip": "EjemploVB\\Form1.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-20T15:34:18.906Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form1.vb",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form1.vb",
+              "RelativeDocumentMoniker": "EjemploVB\\Form1.vb",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form1.vb",
+              "RelativeToolTip": "EjemploVB\\Form1.vb",
+              "ViewState": "AgIAAIsAAAAAAAAAAADwvyEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-20T16:12:28.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Form4.vb",
               "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form4.vb",
               "RelativeDocumentMoniker": "EjemploVB\\Form4.vb",
-              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form4.vb*",
-              "RelativeToolTip": "EjemploVB\\Form4.vb*",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAkwFUAAAASAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form4.vb",
+              "RelativeToolTip": "EjemploVB\\Form4.vb",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowFQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-10-26T05:03:26.313Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Form2.vb [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form2.vb",
-              "RelativeDocumentMoniker": "EjemploVB\\Form2.vb",
-              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form2.vb [Dise\u00F1o]",
-              "RelativeToolTip": "EjemploVB\\Form2.vb [Dise\u00F1o]",
+              "DocumentIndex": 12,
+              "Title": "Form5.vb",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form5.vb",
+              "RelativeDocumentMoniker": "EjemploVB\\Form5.vb",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form5.vb",
+              "RelativeToolTip": "EjemploVB\\Form5.vb",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAowFwAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-21T15:24:29.789Z"
+              "WhenOpened": "2025-10-26T06:34:13.945Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form8.vb [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form8.vb",
-              "RelativeDocumentMoniker": "EjemploVB\\Form8.vb",
-              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form8.vb [Dise\u00F1o]",
-              "RelativeToolTip": "EjemploVB\\Form8.vb [Dise\u00F1o]",
+              "DocumentIndex": 11,
+              "Title": "Form5.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form5.vb",
+              "RelativeDocumentMoniker": "EjemploVB\\Form5.vb",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form5.vb [Dise\u00F1o]",
+              "RelativeToolTip": "EjemploVB\\Form5.vb [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-27T02:18:27.757Z"
+              "WhenOpened": "2025-10-26T06:34:06.383Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form8.vb",
-              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form8.vb",
-              "RelativeDocumentMoniker": "EjemploVB\\Form8.vb",
-              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form8.vb",
-              "RelativeToolTip": "EjemploVB\\Form8.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAbAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "Form5.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form5.Designer.vb",
+              "RelativeDocumentMoniker": "EjemploVB\\Form5.Designer.vb",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form5.Designer.vb",
+              "RelativeToolTip": "EjemploVB\\Form5.Designer.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-27T02:23:06.823Z"
+              "WhenOpened": "2025-10-26T06:34:46.899Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 16,
               "Title": "Module1.vb",
               "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Module1.vb",
               "RelativeDocumentMoniker": "EjemploVB\\Module1.vb",
               "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Module1.vb",
               "RelativeToolTip": "EjemploVB\\Module1.vb",
-              "ViewState": "AgIAACcAAAAAAAAAAAAqwDoAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAawBUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-10-20T15:57:20.28Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
+              "Title": "Form6.vb",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form6.vb",
+              "RelativeDocumentMoniker": "EjemploVB\\Form6.vb",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form6.vb",
+              "RelativeToolTip": "EjemploVB\\Form6.vb",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA4wB4AAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-26T22:17:59.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Form7.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form7.vb",
+              "RelativeDocumentMoniker": "EjemploVB\\Form7.vb",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form7.vb [Dise\u00F1o]",
+              "RelativeToolTip": "EjemploVB\\Form7.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-26T22:48:37.811Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Form7.vb",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form7.vb",
+              "RelativeDocumentMoniker": "EjemploVB\\Form7.vb",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form7.vb",
+              "RelativeToolTip": "EjemploVB\\Form7.vb",
+              "ViewState": "AgIAABcAAAAAAAAAAAAiwCUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-26T22:54:52.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Form8.vb",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form8.vb",
+              "RelativeDocumentMoniker": "EjemploVB\\Form8.vb",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form8.vb",
+              "RelativeToolTip": "EjemploVB\\Form8.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-27T02:23:06.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Form8.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form8.vb",
+              "RelativeDocumentMoniker": "EjemploVB\\Form8.vb",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form8.vb [Dise\u00F1o]",
+              "RelativeToolTip": "EjemploVB\\Form8.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-27T02:18:27.757Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Form2.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form2.vb",
+              "RelativeDocumentMoniker": "EjemploVB\\Form2.vb",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form2.vb [Dise\u00F1o]",
+              "RelativeToolTip": "EjemploVB\\Form2.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-21T15:24:29.789Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Form10.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form10.vb",
+              "RelativeDocumentMoniker": "EjemploVB\\Form10.vb",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form10.vb [Dise\u00F1o]*",
+              "RelativeToolTip": "EjemploVB\\Form10.vb [Dise\u00F1o]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-04T10:45:19.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Form10.vb",
+              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form10.vb",
+              "RelativeDocumentMoniker": "EjemploVB\\Form10.vb",
+              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form10.vb*",
+              "RelativeToolTip": "EjemploVB\\Form10.vb*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAA+wAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-04T10:49:29.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "Form4.Designer.vb",
               "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form4.Designer.vb",
               "RelativeDocumentMoniker": "EjemploVB\\Form4.Designer.vb",
@@ -185,133 +427,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-10-26T05:01:17.521Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Form6.vb [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form6.vb",
-              "RelativeDocumentMoniker": "EjemploVB\\Form6.vb",
-              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form6.vb [Dise\u00F1o]",
-              "RelativeToolTip": "EjemploVB\\Form6.vb [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-26T22:14:10.772Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Form4.vb [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form4.vb",
-              "RelativeDocumentMoniker": "EjemploVB\\Form4.vb",
-              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form4.vb [Dise\u00F1o]*",
-              "RelativeToolTip": "EjemploVB\\Form4.vb [Dise\u00F1o]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-26T05:00:57.382Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Form1.vb",
-              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form1.vb",
-              "RelativeDocumentMoniker": "EjemploVB\\Form1.vb",
-              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form1.vb",
-              "RelativeToolTip": "EjemploVB\\Form1.vb",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAiwHMAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-20T16:12:28.566Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Form3.vb",
-              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form3.vb",
-              "RelativeDocumentMoniker": "EjemploVB\\Form3.vb",
-              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form3.vb",
-              "RelativeToolTip": "EjemploVB\\Form3.vb",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAkwHMAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-26T04:24:15.631Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Form3.vb [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form3.vb",
-              "RelativeDocumentMoniker": "EjemploVB\\Form3.vb",
-              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form3.vb [Dise\u00F1o]",
-              "RelativeToolTip": "EjemploVB\\Form3.vb [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-26T04:14:57.247Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Form7.vb [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form7.vb",
-              "RelativeDocumentMoniker": "EjemploVB\\Form7.vb",
-              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form7.vb [Dise\u00F1o]",
-              "RelativeToolTip": "EjemploVB\\Form7.vb [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-26T22:48:37.811Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Form7.vb",
-              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form7.vb",
-              "RelativeDocumentMoniker": "EjemploVB\\Form7.vb",
-              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form7.vb",
-              "RelativeToolTip": "EjemploVB\\Form7.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-26T22:54:52.928Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Form5.vb [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form5.vb",
-              "RelativeDocumentMoniker": "EjemploVB\\Form5.vb",
-              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form5.vb [Dise\u00F1o]",
-              "RelativeToolTip": "EjemploVB\\Form5.vb [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-26T06:34:06.383Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Form1.vb [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form1.vb",
-              "RelativeDocumentMoniker": "EjemploVB\\Form1.vb",
-              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form1.vb [Dise\u00F1o]",
-              "RelativeToolTip": "EjemploVB\\Form1.vb [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-20T15:34:18.906Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Form5.vb",
-              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form5.vb",
-              "RelativeDocumentMoniker": "EjemploVB\\Form5.vb",
-              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form5.vb",
-              "RelativeToolTip": "EjemploVB\\Form5.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-26T06:34:13.945Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Form5.Designer.vb",
-              "DocumentMoniker": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form5.Designer.vb",
-              "RelativeDocumentMoniker": "EjemploVB\\Form5.Designer.vb",
-              "ToolTip": "C:\\Users\\ECEP\\source\\repos\\EjemploVB\\EjemploVB\\Form5.Designer.vb",
-              "RelativeToolTip": "EjemploVB\\Form5.Designer.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-26T06:34:46.899Z"
             }
           ]
         }

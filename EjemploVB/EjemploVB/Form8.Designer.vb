@@ -71,6 +71,7 @@ Partial Class Form8
         Me.ctContra.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ctContra.Location = New System.Drawing.Point(219, 336)
         Me.ctContra.Name = "ctContra"
+        Me.ctContra.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.ctContra.Size = New System.Drawing.Size(326, 22)
         Me.ctContra.TabIndex = 4
         '

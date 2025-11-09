@@ -29,6 +29,7 @@ Partial Class Form6
         Me.dtpFMax = New System.Windows.Forms.DateTimePicker()
         Me.btnRF = New System.Windows.Forms.Button()
         Me.btnImp = New System.Windows.Forms.Button()
+        Me.lblTot = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -42,7 +43,7 @@ Partial Class Form6
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(611, 277)
+        Me.DataGridView1.Size = New System.Drawing.Size(611, 244)
         Me.DataGridView1.TabIndex = 0
         '
         'lblFMin
@@ -90,18 +91,28 @@ Partial Class Form6
         'btnImp
         '
         Me.btnImp.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.btnImp.Location = New System.Drawing.Point(643, 326)
+        Me.btnImp.Location = New System.Drawing.Point(628, 326)
         Me.btnImp.Name = "btnImp"
-        Me.btnImp.Size = New System.Drawing.Size(68, 60)
+        Me.btnImp.Size = New System.Drawing.Size(83, 60)
         Me.btnImp.TabIndex = 6
         Me.btnImp.Text = "Imprimir Reporte"
         Me.btnImp.UseVisualStyleBackColor = False
+        '
+        'lblTot
+        '
+        Me.lblTot.AutoSize = True
+        Me.lblTot.Location = New System.Drawing.Point(347, 279)
+        Me.lblTot.Name = "lblTot"
+        Me.lblTot.Size = New System.Drawing.Size(51, 16)
+        Me.lblTot.TabIndex = 7
+        Me.lblTot.Text = "Total: 0"
         '
         'Form6
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblTot)
         Me.Controls.Add(Me.btnImp)
         Me.Controls.Add(Me.btnRF)
         Me.Controls.Add(Me.dtpFMax)
@@ -124,4 +135,5 @@ Partial Class Form6
     Friend WithEvents dtpFMax As DateTimePicker
     Friend WithEvents btnRF As Button
     Friend WithEvents btnImp As Button
+    Friend WithEvents lblTot As Label
 End Class

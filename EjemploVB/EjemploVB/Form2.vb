@@ -12,25 +12,7 @@ Public Class Form2
         Dim con As MySqlConnection
         con = conectar()
         'con.Close()
-        If (ctUs.Text = "#" And ctContra.Text = "") Then
-            formPrin = New Form3()
-            formPrin.Padre(Me)
-            log = 1
-            formPrin.Show()
-            Me.Visible = False
-            'Me.Close()
-            Console.WriteLine("Sesión especial admin")
-            Exit Sub
-        ElseIf (ctUs.Text = "*" And ctContra.Text = "") Then
-            formPrin = New Form3()
-            formPrin.Padre(Me)
-            log = 2
-            formPrin.Show()
-            Me.Visible = False
-            'Me.Close()
-            Console.WriteLine("Sesión especial ordinaria")
-            Exit Sub
-        End If
+
         If (EjecutarSelect($"select * from usuarios where username='{ctUs.Text}' and password=md5('{ctContra.Text}')", con) = True) Then
             MessageBox.Show("Ha iniciado sesión correctamente")
             formPrin = New Form3()
@@ -98,6 +80,19 @@ Public Class Form2
     End Sub
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If (tablaVacia("Usuarios", conectar())) Then
+            MessageBox.Show("Se ha detectado que no hay usuarios, se crearan 2 usuarios por defecto, ambos con contraseña 1234")
+            crearUsr("admin", "1234", 1, conectar())
+            crearUsr("vend", "1234", 2, conectar())
+        End If
+        If (EjecutarOrden($"select * from Usuarios where rol='administrador';", conectar()) = 0) Then
+            MessageBox.Show("Se ha detectado que no hay usuarios administradores, se creará2 un admin. por defecto,con contraseña 1234")
+            crearUsr("admin", "1234", 1, conectar())
+        End If
+        If (EjecutarOrden($"select * from Usuarios where rol='vendedor';", conectar()) = 0) Then
+            MessageBox.Show("Se ha detectado que no hay usuarios vendedores, se creará un vendedor por defecto,con contraseña 1234")
+            crearUsr("vend", "1234", 2, conectar())
+        End If
         btnCan_Click(sender, e)
     End Sub
 End Class

@@ -1,6 +1,10 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class Form5
     Dim conn As New MySqlConnection
+    Dim formpadre As Form3
+    Public Sub Padre(formulario As Form3)
+        formpadre = formulario
+    End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         conn = conectar()
         'cargar el datagridview con los datos del dataset 
@@ -12,8 +16,8 @@ Public Class Form5
         'While logIn.LogIn = 0
         'logIn.ShowDialog()
         'End While
-        CType(Me.MdiParent, Form3).Est(True, "CCli")
-        If CType(Me.MdiParent, Form3).ObtPadre().LogIn() = 2 Then
+        'CType(Me.MdiParent, Form3).Est(True, "CCli")
+        If CType(formpadre, Form3).ObtPadre().LogIn() = 2 Then
             GroupBox1.Visible = False
             btsalir.Visible = True
             ct_correo.Enabled = False
@@ -21,13 +25,14 @@ Public Class Form5
             ct_nombre.Enabled = False
             ct_telefono.Enabled = False
         End If
+        ct_idCliente.Text = "0"
     End Sub
     Public Sub Show2(ByRef est As Boolean)
         Me.Show()
         est = True
     End Sub
     Private Sub btnuevo_Click(sender As Object, e As EventArgs) Handles btnuevo.Click
-        Me.ct_idCliente.Text = ""
+        Me.ct_idCliente.Text = "0"
         Me.ct_nombre.Text = ""
         Me.ct_direccion.Text = ""
         Me.ct_telefono.Text = ""
@@ -85,7 +90,7 @@ Public Class Form5
         cmd.CommandText = SQL
         cmd.ExecuteNonQuery()
         MessageBox.Show("Registro " & var)
-        btnuevo_Click(Nothing, Nothing)
+        btnuevo_Click(sender, e)
         SQL = "SELECT * from clientes order by nombre"
         DataGridView1.DataSource = cargar_grid(SQL, conn)
         conn.Close()
@@ -143,6 +148,10 @@ ct_idCliente.Text & "'"
     End Sub
 
     Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        CType(Me.MdiParent, Form3).Est(False, "CCli")
+        'CType(form, Form3).Est(False, "CCli")
+    End Sub
+
+    Private Sub btnImp_Click(sender As Object, e As EventArgs) Handles btnImp.Click
+        GridAExcelV2(DataGridView1, "Reporte Clientes")
     End Sub
 End Class

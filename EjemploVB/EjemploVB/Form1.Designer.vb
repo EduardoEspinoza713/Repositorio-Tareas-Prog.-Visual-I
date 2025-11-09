@@ -33,19 +33,23 @@ Partial Class Form1
         Me.lblTelf = New System.Windows.Forms.Label()
         Me.lblCorreo = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.btsalir = New System.Windows.Forms.Button()
         Me.btborrar = New System.Windows.Forms.Button()
         Me.btguardar = New System.Windows.Forms.Button()
         Me.btnuevo = New System.Windows.Forms.Button()
+        Me.btsalir = New System.Windows.Forms.Button()
+        Me.btnImp = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'DataGridView1
         '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(92, 12)
         Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.Size = New System.Drawing.Size(581, 203)
@@ -139,16 +143,6 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 10
         Me.GroupBox1.TabStop = False
         '
-        'btsalir
-        '
-        Me.btsalir.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.btsalir.Location = New System.Drawing.Point(606, 400)
-        Me.btsalir.Name = "btsalir"
-        Me.btsalir.Size = New System.Drawing.Size(75, 23)
-        Me.btsalir.TabIndex = 3
-        Me.btsalir.Text = "Salir"
-        Me.btsalir.UseVisualStyleBackColor = False
-        '
         'btborrar
         '
         Me.btborrar.BackColor = System.Drawing.SystemColors.ActiveBorder
@@ -179,12 +173,33 @@ Partial Class Form1
         Me.btnuevo.Text = "Nuevo"
         Me.btnuevo.UseVisualStyleBackColor = False
         '
+        'btsalir
+        '
+        Me.btsalir.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.btsalir.Location = New System.Drawing.Point(606, 400)
+        Me.btsalir.Name = "btsalir"
+        Me.btsalir.Size = New System.Drawing.Size(75, 23)
+        Me.btsalir.TabIndex = 3
+        Me.btsalir.Text = "Salir"
+        Me.btsalir.UseVisualStyleBackColor = False
+        '
+        'btnImp
+        '
+        Me.btnImp.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.btnImp.Location = New System.Drawing.Point(606, 440)
+        Me.btnImp.Name = "btnImp"
+        Me.btnImp.Size = New System.Drawing.Size(75, 23)
+        Me.btnImp.TabIndex = 18
+        Me.btnImp.Text = "Imprimir"
+        Me.btnImp.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(800, 475)
+        Me.Controls.Add(Me.btnImp)
         Me.Controls.Add(Me.btsalir)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.lblCorreo)
@@ -222,4 +237,5 @@ Partial Class Form1
     Friend WithEvents btborrar As Button
     Friend WithEvents btguardar As Button
     Friend WithEvents btnuevo As Button
+    Friend WithEvents btnImp As Button
 End Class

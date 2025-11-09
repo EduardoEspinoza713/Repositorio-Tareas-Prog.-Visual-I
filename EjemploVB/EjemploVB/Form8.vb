@@ -1,11 +1,15 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class Form8
     Dim id As String = ""
+    Dim formpadre As Form3
+    Dim contra As String
+    Public Sub Padre(formulario As Form3)
+        formpadre = formulario
+    End Sub
     Private Sub btnSal_Click(sender As Object, e As EventArgs) Handles btnSal.Click
         Me.Close()
-        CType(Me.MdiParent, Form3).Est(False, "AdmiUs")
+        'CType(Me.MdiParent, Form3).Est(False, "AdmiUs")
     End Sub
-
     Private Sub Form8_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim conn As MySqlConnection
         conn = conectar()
@@ -14,7 +18,9 @@ Public Class Form8
         SQL = "SELECT * from usuarios;"
         DataGridView1.DataSource = cargar_grid(SQL, conn)
         conn.Close()
-        CType(Me.MdiParent, Form3).Est(True, "AdmiUs")
+        'CType(Me.MdiParent, Form3).Est(True, "AdmiUs")
+        contra = ""
+        id = "0"
     End Sub
 
     Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
@@ -30,7 +36,8 @@ Public Class Form8
         Dim lectura As MySqlDataReader = cmd.ExecuteReader()
         If lectura.Read = True Then
             ctUs.Text = lectura("username").ToString()
-            ctContra.Text = lectura("password").ToString()
+            ctContra.Text = ""
+            contra = lectura("password").ToString()
             cbRol.Text = lectura("rol").ToString()
             id = lectura("id_usuario").ToString()
         End If
@@ -42,6 +49,8 @@ Public Class Form8
         ctUs.Text = ""
         ctContra.Text = ""
         cbRol.Text = ""
+        contra = ""
+        id = "0"
     End Sub
 
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
@@ -53,9 +62,14 @@ Public Class Form8
             Exit Sub
         End If
         If ctContra.Text = "" Then
-            MessageBox.Show("Digite la contraseña")
-            ctContra.Focus()
-            Exit Sub
+            If contra = "" Then
+                MessageBox.Show("Digite la contraseña")
+                ctContra.Focus()
+                Exit Sub
+            End If
+            contra = $"'{contra}'"
+        Else
+            contra = $"MD5('{ctContra.Text}')"
         End If
         If cbRol.Text = "" Then
             MessageBox.Show("Seleccione un rol")
@@ -76,13 +90,13 @@ Public Class Form8
         If lectura.HasRows Then
             var = "Actualizado"
             SQL = "UPDATE usuarios set username='" & ctUs.Text & "' " &
-            ",password=md5('" & ctContra.Text &
-            "',rol='" & cbRol.Text &
+            ",password=" & contra &
+            ",rol='" & cbRol.Text &
             "' where id_usuario='" & id & "'"
         Else
             var = "Guardado"
-            SQL = "INSERT INTO usuarios values(null,'" & ctUs.Text & "','" &
-    ctContra.Text & "','" & cbRol.Text & "')"
+            SQL = "INSERT INTO usuarios values(null,'" & ctUs.Text & "'," &
+    contra & ",'" & cbRol.Text & "')"
 
         End If
         lectura.Close()
@@ -93,6 +107,8 @@ Public Class Form8
         SQL = "SELECT * from usuarios order by id_usuario"
         DataGridView1.DataSource = cargar_grid(SQL, conn)
         conn.Close()
+        contra = ""
+        id = "0"
     End Sub
 
     Private Sub btnBorrar_Click(sender As Object, e As EventArgs) Handles btnBorrar.Click
@@ -121,5 +137,7 @@ id & "'"
         SQL = "SELECT * from usuarios order by id_usuario"
         DataGridView1.DataSource = cargar_grid(SQL, conn)
         conn.Close()
+        contra = ""
+        id = "0"
     End Sub
 End Class

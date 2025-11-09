@@ -28,6 +28,7 @@ Partial Class Form7
         Me.btnFP = New System.Windows.Forms.Button()
         Me.ctIDP = New System.Windows.Forms.TextBox()
         Me.ctNomP = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -49,9 +50,9 @@ Partial Class Form7
         Me.lbl_IDP.AutoSize = True
         Me.lbl_IDP.Location = New System.Drawing.Point(85, 333)
         Me.lbl_IDP.Name = "lbl_IDP"
-        Me.lbl_IDP.Size = New System.Drawing.Size(77, 16)
+        Me.lbl_IDP.Size = New System.Drawing.Size(87, 16)
         Me.lbl_IDP.TabIndex = 1
-        Me.lbl_IDP.Text = "ID Producto"
+        Me.lbl_IDP.Text = "ID Proveedor"
         '
         'lbl_NomP
         '
@@ -77,7 +78,7 @@ Partial Class Form7
         Me.ctIDP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ctIDP.Location = New System.Drawing.Point(201, 327)
         Me.ctIDP.Name = "ctIDP"
-        Me.ctIDP.Size = New System.Drawing.Size(519, 22)
+        Me.ctIDP.Size = New System.Drawing.Size(440, 22)
         Me.ctIDP.TabIndex = 4
         '
         'ctNomP
@@ -85,14 +86,25 @@ Partial Class Form7
         Me.ctNomP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ctNomP.Location = New System.Drawing.Point(201, 363)
         Me.ctNomP.Name = "ctNomP"
-        Me.ctNomP.Size = New System.Drawing.Size(519, 22)
+        Me.ctNomP.Size = New System.Drawing.Size(440, 22)
         Me.ctNomP.TabIndex = 5
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Button1.Location = New System.Drawing.Point(647, 331)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(73, 53)
+        Me.Button1.TabIndex = 6
+        Me.Button1.Text = "Imprimir Reporte"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Form7
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ctNomP)
         Me.Controls.Add(Me.ctIDP)
         Me.Controls.Add(Me.btnFP)
@@ -100,7 +112,7 @@ Partial Class Form7
         Me.Controls.Add(Me.lbl_IDP)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "Form7"
-        Me.Text = "Form7"
+        Me.Text = "Ganancias"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -113,4 +125,5 @@ Partial Class Form7
     Friend WithEvents btnFP As Button
     Friend WithEvents ctIDP As TextBox
     Friend WithEvents ctNomP As TextBox
+    Friend WithEvents Button1 As Button
 End Class

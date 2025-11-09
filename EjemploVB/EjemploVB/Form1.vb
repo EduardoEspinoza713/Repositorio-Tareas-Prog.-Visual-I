@@ -1,6 +1,10 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class Form1
     Dim conn As New MySqlConnection
+    Dim formpadre As Form3
+    Public Sub Padre(formulario As Form3)
+        formpadre = formulario
+    End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         conn = conectar()
         'cargar el datagridview con los datos del dataset 
@@ -12,7 +16,7 @@ Public Class Form1
         'While logIn.LogIn = 0
         'logIn.ShowDialog()
         'End While
-        If CType(Me.MdiParent, Form3).ObtPadre().LogIn() = 2 Then
+        If CType(formpadre, Form3).ObtPadre().LogIn() = 2 Then
             GroupBox1.Visible = False
             btsalir.Visible = True
             ct_correo.Enabled = False
@@ -20,13 +24,14 @@ Public Class Form1
             ct_nombre.Enabled = False
             ct_telefono.Enabled = False
         End If
+        ct_idproveedor.Text = "0"
     End Sub
     Public Sub Show2(ByRef est As Boolean)
-        Me.Show()
-        est = True
+        Me.ShowDialog()
+        est = False
     End Sub
     Private Sub btnuevo_Click(sender As Object, e As EventArgs) Handles btnuevo.Click
-        Me.ct_idproveedor.Text = ""
+        Me.ct_idproveedor.Text = "0"
         Me.ct_nombre.Text = ""
         Me.ct_direccion.Text = ""
         Me.ct_telefono.Text = ""
@@ -142,6 +147,10 @@ ct_idproveedor.Text & "'"
     End Sub
 
     Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        CType(Me.MdiParent, Form3).Est(False, "CProv")
+        'CType(formpadre, Form3).Est(False, "CProv")
+    End Sub
+
+    Private Sub btnImp_Click(sender As Object, e As EventArgs) Handles btnImp.Click
+        GridAExcelV2(DataGridView1, "Reporte Proveedores")
     End Sub
 End Class

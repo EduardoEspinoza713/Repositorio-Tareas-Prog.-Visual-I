@@ -37,7 +37,7 @@ Partial Class Form2
         'btnIniSes
         '
         Me.btnIniSes.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.btnIniSes.Location = New System.Drawing.Point(54, 360)
+        Me.btnIniSes.Location = New System.Drawing.Point(125, 360)
         Me.btnIniSes.Name = "btnIniSes"
         Me.btnIniSes.Size = New System.Drawing.Size(100, 53)
         Me.btnIniSes.TabIndex = 0
@@ -47,7 +47,7 @@ Partial Class Form2
         'btnCan
         '
         Me.btnCan.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.btnCan.Location = New System.Drawing.Point(194, 360)
+        Me.btnCan.Location = New System.Drawing.Point(231, 360)
         Me.btnCan.Name = "btnCan"
         Me.btnCan.Size = New System.Drawing.Size(100, 53)
         Me.btnCan.TabIndex = 1
@@ -57,12 +57,14 @@ Partial Class Form2
         'btnAggU
         '
         Me.btnAggU.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.btnAggU.Enabled = False
         Me.btnAggU.Location = New System.Drawing.Point(327, 360)
         Me.btnAggU.Name = "btnAggU"
         Me.btnAggU.Size = New System.Drawing.Size(100, 53)
         Me.btnAggU.TabIndex = 2
         Me.btnAggU.Text = "Nuevo Usuario"
         Me.btnAggU.UseVisualStyleBackColor = False
+        Me.btnAggU.Visible = False
         '
         'lblNom
         '
@@ -86,6 +88,7 @@ Partial Class Form2
         Me.ctContra.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ctContra.Location = New System.Drawing.Point(207, 229)
         Me.ctContra.Name = "ctContra"
+        Me.ctContra.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.ctContra.Size = New System.Drawing.Size(172, 22)
         Me.ctContra.TabIndex = 6
         '
@@ -143,7 +146,7 @@ Partial Class Form2
         Me.Controls.Add(Me.btnCan)
         Me.Controls.Add(Me.btnIniSes)
         Me.Name = "Form2"
-        Me.Text = "Form2"
+        Me.Text = "Iniciar Sesión"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

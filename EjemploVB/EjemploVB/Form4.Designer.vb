@@ -26,7 +26,7 @@ Partial Class Form4
         Me.ct_nombre = New System.Windows.Forms.TextBox()
         Me.ct_descripcion = New System.Windows.Forms.TextBox()
         Me.ct_PC = New System.Windows.Forms.TextBox()
-        Me.ct_PocGan = New System.Windows.Forms.TextBox()
+        Me.ct_PorcGan = New System.Windows.Forms.TextBox()
         Me.lblNom = New System.Windows.Forms.Label()
         Me.lblDir = New System.Windows.Forms.Label()
         Me.lblPC = New System.Windows.Forms.Label()
@@ -42,15 +42,19 @@ Partial Class Form4
         Me.lblStMin = New System.Windows.Forms.Label()
         Me.ctStMin = New System.Windows.Forms.TextBox()
         Me.cb_idproveedor = New System.Windows.Forms.ComboBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'DataGridView1
         '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(12, 12)
         Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.Size = New System.Drawing.Size(776, 203)
@@ -80,13 +84,13 @@ Partial Class Form4
         Me.ct_PC.Size = New System.Drawing.Size(168, 22)
         Me.ct_PC.TabIndex = 3
         '
-        'ct_PocGan
+        'ct_PorcGan
         '
-        Me.ct_PocGan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ct_PocGan.Location = New System.Drawing.Point(302, 416)
-        Me.ct_PocGan.Name = "ct_PocGan"
-        Me.ct_PocGan.Size = New System.Drawing.Size(168, 22)
-        Me.ct_PocGan.TabIndex = 4
+        Me.ct_PorcGan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ct_PorcGan.Location = New System.Drawing.Point(302, 416)
+        Me.ct_PorcGan.Name = "ct_PorcGan"
+        Me.ct_PorcGan.Size = New System.Drawing.Size(168, 22)
+        Me.ct_PorcGan.TabIndex = 4
         '
         'lblNom
         '
@@ -226,12 +230,23 @@ Partial Class Form4
         Me.cb_idproveedor.Size = New System.Drawing.Size(168, 24)
         Me.cb_idproveedor.TabIndex = 16
         '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Button1.Location = New System.Drawing.Point(647, 497)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 17
+        Me.Button1.Text = "Imprimir"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(800, 567)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.cb_idproveedor)
         Me.Controls.Add(Me.btsalir)
         Me.Controls.Add(Me.lblStMin)
@@ -244,7 +259,7 @@ Partial Class Form4
         Me.Controls.Add(Me.lblPC)
         Me.Controls.Add(Me.lblDir)
         Me.Controls.Add(Me.lblNom)
-        Me.Controls.Add(Me.ct_PocGan)
+        Me.Controls.Add(Me.ct_PorcGan)
         Me.Controls.Add(Me.ct_PC)
         Me.Controls.Add(Me.ct_descripcion)
         Me.Controls.Add(Me.ct_nombre)
@@ -263,7 +278,7 @@ Partial Class Form4
     Friend WithEvents ct_nombre As TextBox
     Friend WithEvents ct_descripcion As TextBox
     Friend WithEvents ct_PC As TextBox
-    Friend WithEvents ct_PocGan As TextBox
+    Friend WithEvents ct_PorcGan As TextBox
     Friend WithEvents lblNom As Label
     Friend WithEvents lblDir As Label
     Friend WithEvents lblPC As Label
@@ -279,4 +294,5 @@ Partial Class Form4
     Friend WithEvents lblStMin As Label
     Friend WithEvents ctStMin As TextBox
     Friend WithEvents cb_idproveedor As ComboBox
+    Friend WithEvents Button1 As Button
 End Class
