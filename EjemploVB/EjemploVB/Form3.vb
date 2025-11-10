@@ -39,17 +39,17 @@
         If (RGan = True) Then
             MessageBox.Show("La ventana ya está abierta.")
         Else
-            Dim rgan As New Form7("Reporte de Ganancias", "select p.id_producto as ID, p.nombre as Producto, p.id_proveedor, dv.precio_unitario as 'Precio Unitario de Venta', p.precio_compra as 'Precio Compra', dv.cantidad as 'Cantidad Vendida',
-     sum((dv.precio_unitario - p.precio_compra) * dv.cantidad
-	) as 'Ganancia Total'
+            Dim rgan As New Form7("Reporte de Ganancias", "select
+    id_producto as id,
+    nombre as producto,
+    id_proveedor,
+    precio_compra,
+    precio_venta,
+    (precio_venta - precio_compra) as ganancia_prevista
 from
-    Productos p
-join
-    Detalle_Ventas dv on p.id_producto = dv.id_producto
-group by
-    p.id_producto, p.nombre, p.id_proveedor, dv.precio_unitario, p.precio_compra, dv.cantidad
+    productos
 order by
-    'Ganancia Total' desc;", "RGan")
+    ganancia_prevista desc;", "RGan")
             rgan.Padre(Me)
             rgan.ShowDialog()
             'Me.LayoutMdi(MdiLayout.TileVertical)
@@ -170,6 +170,7 @@ order by
         'Me.LayoutMdi(MdiLayout.TileHorizontal)
         If formPadre.LogIn() = 2 Then
             AdmUs.Visible = False
+            CompraToolStripMenuItem.Visible = False
         End If
     End Sub
 End Class

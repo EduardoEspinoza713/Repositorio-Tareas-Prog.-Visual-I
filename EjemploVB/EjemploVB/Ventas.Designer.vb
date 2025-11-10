@@ -25,30 +25,32 @@ Partial Class Ventas
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnIngreso = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txbcuanto = New System.Windows.Forms.TextBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.txtTotalVenta = New System.Windows.Forms.TextBox()
+        Me.dgvVenta = New System.Windows.Forms.DataGridView()
         Me.Producto = New System.Windows.Forms.DataGridViewComboBoxColumn()
         Me.Cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.btnActualizar = New System.Windows.Forms.Button()
         Me.cbxCliente = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnImp = New System.Windows.Forms.Button()
+        Me.btnLimp = New System.Windows.Forms.Button()
+        CType(Me.dgvVenta, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(57, 90)
+        Me.Label2.Location = New System.Drawing.Point(51, 72)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(150, 20)
+        Me.Label2.Size = New System.Drawing.Size(125, 16)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Productos de Venta"
         '
         'btnIngreso
         '
-        Me.btnIngreso.Location = New System.Drawing.Point(71, 303)
+        Me.btnIngreso.Location = New System.Drawing.Point(27, 261)
+        Me.btnIngreso.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnIngreso.Name = "btnIngreso"
-        Me.btnIngreso.Size = New System.Drawing.Size(105, 44)
+        Me.btnIngreso.Size = New System.Drawing.Size(93, 35)
         Me.btnIngreso.TabIndex = 4
         Me.btnIngreso.Text = "Guardar"
         Me.btnIngreso.UseVisualStyleBackColor = True
@@ -56,29 +58,33 @@ Partial Class Ventas
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(57, 148)
+        Me.Label3.Location = New System.Drawing.Point(51, 118)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(141, 20)
+        Me.Label3.Size = New System.Drawing.Size(38, 16)
         Me.Label3.TabIndex = 13
-        Me.Label3.Text = "A cuanto se vende"
+        Me.Label3.Text = "Total"
         '
-        'txbcuanto
+        'txtTotalVenta
         '
-        Me.txbcuanto.Location = New System.Drawing.Point(43, 183)
-        Me.txbcuanto.Name = "txbcuanto"
-        Me.txbcuanto.Size = New System.Drawing.Size(187, 26)
-        Me.txbcuanto.TabIndex = 14
+        Me.txtTotalVenta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtTotalVenta.Enabled = False
+        Me.txtTotalVenta.Location = New System.Drawing.Point(38, 146)
+        Me.txtTotalVenta.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtTotalVenta.Name = "txtTotalVenta"
+        Me.txtTotalVenta.Size = New System.Drawing.Size(167, 22)
+        Me.txtTotalVenta.TabIndex = 14
         '
-        'DataGridView1
+        'dgvVenta
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Producto, Me.Cantidad})
-        Me.DataGridView1.Location = New System.Drawing.Point(319, 52)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 62
-        Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.Size = New System.Drawing.Size(430, 318)
-        Me.DataGridView1.TabIndex = 15
+        Me.dgvVenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvVenta.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Producto, Me.Cantidad})
+        Me.dgvVenta.Location = New System.Drawing.Point(284, 42)
+        Me.dgvVenta.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.dgvVenta.Name = "dgvVenta"
+        Me.dgvVenta.RowHeadersWidth = 62
+        Me.dgvVenta.RowTemplate.Height = 28
+        Me.dgvVenta.Size = New System.Drawing.Size(632, 254)
+        Me.dgvVenta.TabIndex = 15
         '
         'Producto
         '
@@ -94,49 +100,61 @@ Partial Class Ventas
         Me.Cantidad.Name = "Cantidad"
         Me.Cantidad.Width = 150
         '
-        'btnActualizar
-        '
-        Me.btnActualizar.Location = New System.Drawing.Point(517, 398)
-        Me.btnActualizar.Name = "btnActualizar"
-        Me.btnActualizar.Size = New System.Drawing.Size(138, 40)
-        Me.btnActualizar.TabIndex = 16
-        Me.btnActualizar.Text = "Actualizar"
-        Me.btnActualizar.UseVisualStyleBackColor = True
-        Me.btnActualizar.Visible = False
-        '
         'cbxCliente
         '
         Me.cbxCliente.FormattingEnabled = True
-        Me.cbxCliente.Location = New System.Drawing.Point(16, 49)
+        Me.cbxCliente.Location = New System.Drawing.Point(14, 39)
+        Me.cbxCliente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cbxCliente.Name = "cbxCliente"
-        Me.cbxCliente.Size = New System.Drawing.Size(214, 28)
+        Me.cbxCliente.Size = New System.Drawing.Size(191, 24)
         Me.cbxCliente.TabIndex = 17
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(81, 22)
+        Me.Label4.Location = New System.Drawing.Point(72, 18)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(58, 20)
+        Me.Label4.Size = New System.Drawing.Size(48, 16)
         Me.Label4.TabIndex = 18
         Me.Label4.Text = "Cliente"
         '
+        'btnImp
+        '
+        Me.btnImp.Location = New System.Drawing.Point(513, 313)
+        Me.btnImp.Name = "btnImp"
+        Me.btnImp.Size = New System.Drawing.Size(145, 23)
+        Me.btnImp.TabIndex = 19
+        Me.btnImp.Text = "Imprimir Factura"
+        Me.btnImp.UseVisualStyleBackColor = True
+        '
+        'btnLimp
+        '
+        Me.btnLimp.Location = New System.Drawing.Point(149, 261)
+        Me.btnLimp.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnLimp.Name = "btnLimp"
+        Me.btnLimp.Size = New System.Drawing.Size(93, 35)
+        Me.btnLimp.TabIndex = 20
+        Me.btnLimp.Text = "Limpiar"
+        Me.btnLimp.UseVisualStyleBackColor = True
+        '
         'Ventas
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(994, 360)
+        Me.Controls.Add(Me.btnLimp)
+        Me.Controls.Add(Me.btnImp)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.cbxCliente)
-        Me.Controls.Add(Me.btnActualizar)
-        Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.txbcuanto)
+        Me.Controls.Add(Me.dgvVenta)
+        Me.Controls.Add(Me.txtTotalVenta)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btnIngreso)
         Me.Controls.Add(Me.Label2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Ventas"
         Me.Text = "Ventas"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvVenta, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -144,11 +162,12 @@ Partial Class Ventas
     Friend WithEvents Label2 As Label
     Friend WithEvents btnIngreso As Button
     Friend WithEvents Label3 As Label
-    Friend WithEvents txbcuanto As TextBox
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents btnActualizar As Button
+    Friend WithEvents txtTotalVenta As TextBox
+    Friend WithEvents dgvVenta As DataGridView
     Friend WithEvents cbxCliente As ComboBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Producto As DataGridViewComboBoxColumn
     Friend WithEvents Cantidad As DataGridViewTextBoxColumn
+    Friend WithEvents btnImp As Button
+    Friend WithEvents btnLimp As Button
 End Class

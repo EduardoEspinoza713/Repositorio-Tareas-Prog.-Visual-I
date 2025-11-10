@@ -128,6 +128,7 @@ Datagridview1.Rows(fila).Cells(col).Value
                 .Font.Size = 14
                 .Interior.Color = RGB(173, 216, 230)
                 .RowHeight = 25
+                .WrapText = True
             End With
 
             For i As Integer = 1 To ncol
@@ -193,4 +194,25 @@ Datagridview1.Rows(fila).Cells(col).Value
         End Select
         MessageBox.Show($"Usuario {nom} creado exitosamente")
     End Sub
+
+    Public Function ObtenerDataTable(ByVal sql As String) As System.Data.DataTable
+        Dim dt As New System.Data.DataTable()
+        Dim conn As MySqlConnection = conectar()
+        conn.Open()
+        Dim da As New MySqlDataAdapter(sql, conn)
+        da.Fill(dt)
+        conn.Close()
+        Return dt
+    End Function
+
+    Public Function ObtenerEscalar(ByVal sql As String) As Object
+        Dim resultado As Object = Nothing
+        Dim conn As MySqlConnection = conectar()
+        conn.Open()
+        Using cmd As New MySqlCommand(sql, conn)
+            resultado = cmd.ExecuteScalar()
+        End Using
+        conn.Close()
+        Return resultado
+    End Function
 End Module

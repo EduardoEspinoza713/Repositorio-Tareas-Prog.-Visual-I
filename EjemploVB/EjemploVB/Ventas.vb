@@ -5,20 +5,23 @@ Imports System.Windows.Forms
 Public Class Ventas
     Private Const CONNECTION_STRING As String = "Server=localhost;Database=inventario;Uid=root;Pwd=1234;"
     Private idClienteSeleccionado As Integer = 0
+    Private Shared ReadOnly CONEXION As MySqlConnection = Module1.conectar()
 
     Public Sub New()
         InitializeComponent()
     End Sub
 
     Private Sub Ventas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        CargarNombresClientesConID()
+        txtTotalVenta.Enabled = False
+        txtTotalVenta.Text = "0.00"
+        CargarClientes()
         ConfigurarDataGridViewVenta()
         CargarDetalleVenta(0)
+        btnImp.Enabled = False
     End Sub
-
-    Private Function ObtenerProductosCatalogo() As DataTable
+    Private Function ObtenerProductosCatalogo() As System.Data.DataTable
         Dim query As String = "SELECT id_producto, nombre, precio_venta, stock FROM Productos ORDER BY nombre"
-        Dim dtProductos As New DataTable()
+        Dim dtProductos As New System.Data.DataTable()
 
         Try
             Using connection As New MySqlConnection(CONNECTION_STRING)
@@ -33,41 +36,34 @@ Public Class Ventas
     End Function
 
     Private Sub ConfigurarDataGridViewVenta()
-        DataGridView1.DataSource = Nothing
-        DataGridView1.Columns.Clear()
+        dgvVenta.DataSource = Nothing
+        dgvVenta.Columns.Clear()
+        Dim dtProductos As System.Data.DataTable = ObtenerProductosCatalogo()
 
         Dim colProducto As New DataGridViewComboBoxColumn()
         colProducto.HeaderText = "Producto"
         colProducto.Name = "colProducto"
         colProducto.DisplayMember = "nombre"
         colProducto.ValueMember = "id_producto"
-        colProducto.DataSource = ObtenerProductosCatalogo()
+        colProducto.DataSource = dtProductos
 
-        DataGridView1.Columns.Add(colProducto)
-        DataGridView1.Columns.Add("colCantidad", "Cantidad")
-        DataGridView1.Columns.Add("colPrecioUnitario", "Precio_Unitario")
-        DataGridView1.Columns.Add("colSubtotal", "Subtotal")
+        dgvVenta.Columns.Add(colProducto)
+        dgvVenta.Columns.Add("colCantidad", "Cantidad")
+        dgvVenta.Columns.Add("colPrecioUnitario", "Precio_Unitario")
+        dgvVenta.Columns.Add("colSubtotal", "Subtotal")
 
-        DataGridView1.Columns("colPrecioUnitario").Visible = False
-        DataGridView1.Columns("colSubtotal").Visible = False
+        dgvVenta.Columns("colPrecioUnitario").DefaultCellStyle.Format = "N2"
+        dgvVenta.Columns("colSubtotal").DefaultCellStyle.Format = "N2"
 
-        DataGridView1.ReadOnly = False
-        DataGridView1.AllowUserToAddRows = True
-
-        AddHandler DataGridView1.CellValueChanged, AddressOf DataGridView1_CellValueChanged
-        AddHandler DataGridView1.CellEndEdit, AddressOf DataGridView1_CellEndEdit
+        dgvVenta.ReadOnly = False
+        dgvVenta.AllowUserToAddRows = True
     End Sub
 
-    Private Sub CargarNombresClientesConID()
+    Private Sub CargarClientes()
         Dim query As String = "SELECT id_cliente, nombre FROM Clientes ORDER BY nombre"
 
         Try
-            Dim dtClientes As New DataTable()
-
-            Using connection As New MySqlConnection(CONNECTION_STRING)
-                Dim adapter As New MySqlDataAdapter(query, connection)
-                adapter.Fill(dtClientes)
-            End Using
+            Dim dtClientes As System.Data.DataTable = Module1.ObtenerDataTable(query)
 
             cbxCliente.DataSource = dtClientes
             cbxCliente.DisplayMember = "nombre"
@@ -82,81 +78,121 @@ Public Class Ventas
         End Try
     End Sub
 
-    Private Sub DataGridView1_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellValueChanged
+    Private Sub dgvVenta_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles dgvVenta.CellValueChanged
         If e.RowIndex >= 0 Then
-            If e.ColumnIndex = DataGridView1.Columns("colProducto").Index Then
-                ActualizarPrecioYStock(e.RowIndex)
+            If dgvVenta.Columns(e.ColumnIndex).Name = "colProducto" Then
+                ActualizarPrecioYCalcular(e.RowIndex)
             End If
         End If
     End Sub
 
-    Private Sub DataGridView1_CellEndEdit(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellEndEdit
-        If e.RowIndex >= 0 AndAlso e.ColumnIndex = DataGridView1.Columns("colCantidad").Index Then
+    Private Sub dgvVenta_CellEndEdit(sender As Object, e As DataGridViewCellEventArgs) Handles dgvVenta.CellEndEdit
+        If e.RowIndex >= 0 AndAlso dgvVenta.Columns(e.ColumnIndex).Name = "colCantidad" Then
             Dim cantidad As Integer = 0
 
-            If Not Integer.TryParse(DataGridView1.Rows(e.RowIndex).Cells("colCantidad").Value?.ToString(), cantidad) OrElse cantidad <= 0 Then
-                DataGridView1.Rows(e.RowIndex).Cells("colCantidad").Value = 1
+            If Not Integer.TryParse(dgvVenta.Rows(e.RowIndex).Cells("colCantidad").Value?.ToString(), cantidad) OrElse cantidad <= 0 Then
+                dgvVenta.Rows(e.RowIndex).Cells("colCantidad").Value = 1
                 MessageBox.Show("La cantidad debe ser un número entero mayor a cero.", "Cantidad Inválida")
             End If
-            CalcularSubtotal(e.RowIndex)
+            CalcularSubtotalYTotal(e.RowIndex)
         End If
     End Sub
 
-    Private Sub ActualizarPrecioYStock(ByVal rowIndex As Integer)
-        Dim cellProducto As DataGridViewComboBoxCell = DirectCast(DataGridView1.Rows(rowIndex).Cells("colProducto"), DataGridViewComboBoxCell)
+    Private Sub ActualizarPrecioYCalcular(ByVal rowIndex As Integer)
+        Dim cellProducto As DataGridViewComboBoxCell = DirectCast(dgvVenta.Rows(rowIndex).Cells("colProducto"), DataGridViewComboBoxCell)
 
         If cellProducto.Value Is Nothing Then
-            DataGridView1.Rows(rowIndex).Cells("colPrecioUnitario").Value = 0.0D
-            CalcularSubtotal(rowIndex)
+            dgvVenta.Rows(rowIndex).Cells("colPrecioUnitario").Value = 0.0D
+            CalcularSubtotalYTotal(rowIndex)
             Exit Sub
         End If
 
         Dim idProducto As Integer = Convert.ToInt32(cellProducto.Value)
-        Dim dtCatalogo As DataTable = ObtenerProductosCatalogo()
+        Dim queryPrecio As String = $"SELECT precio_venta FROM Productos WHERE id_producto = {idProducto}"
+        Dim objPrecio As Object = Module1.ObtenerEscalar(queryPrecio)
 
-        Dim foundRows() As DataRow = dtCatalogo.Select($"id_producto = {idProducto}")
+        If objPrecio IsNot Nothing AndAlso Not IsDBNull(objPrecio) Then
+            Dim precio As Decimal = Convert.ToDecimal(objPrecio)
 
-        If foundRows.Length > 0 Then
-            Dim precio As Decimal = foundRows(0).Field(Of Decimal)("precio_venta")
+            If precio < 0 Then
+                precio = 0.0D
+                MessageBox.Show("Advertencia: El precio del producto era negativo en la BD y se ha establecido a 0.", "Precio Corregido", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            End If
 
-            DataGridView1.Rows(rowIndex).Cells("colPrecioUnitario").Value = precio
+            dgvVenta.Rows(rowIndex).Cells("colPrecioUnitario").Value = precio
 
-            CalcularSubtotal(rowIndex)
+            If dgvVenta.Rows(rowIndex).Cells("colCantidad").Value Is Nothing OrElse dgvVenta.Rows(rowIndex).Cells("colCantidad").Value.ToString() = "" Then
+                dgvVenta.Rows(rowIndex).Cells("colCantidad").Value = 1
+            End If
+
+            CalcularSubtotalYTotal(rowIndex)
+        Else
+            dgvVenta.Rows(rowIndex).Cells("colPrecioUnitario").Value = 0.0D
+            CalcularSubtotalYTotal(rowIndex)
         End If
     End Sub
 
-    Private Sub CalcularSubtotal(ByVal rowIndex As Integer)
+    Private Sub CalcularSubtotalYTotal(ByVal rowIndex As Integer)
         Dim cantidad As Integer = 0
         Dim precio As Decimal = 0.0D
+        Dim subtotal As Decimal = 0.0D
 
-        If Integer.TryParse(DataGridView1.Rows(rowIndex).Cells("colCantidad").Value?.ToString(), cantidad) AndAlso
-           Decimal.TryParse(DataGridView1.Rows(rowIndex).Cells("colPrecioUnitario").Value?.ToString(), precio) Then
+        If Integer.TryParse(dgvVenta.Rows(rowIndex).Cells("colCantidad").Value?.ToString(), cantidad) AndAlso
+         Decimal.TryParse(dgvVenta.Rows(rowIndex).Cells("colPrecioUnitario").Value?.ToString(), precio) Then
 
-            DataGridView1.Rows(rowIndex).Cells("colSubtotal").Value = cantidad * precio
+            subtotal = cantidad * precio
+            dgvVenta.Rows(rowIndex).Cells("colSubtotal").Value = subtotal
         Else
-            DataGridView1.Rows(rowIndex).Cells("colSubtotal").Value = 0.0D
+            dgvVenta.Rows(rowIndex).Cells("colSubtotal").Value = 0.0D
         End If
+
+        RecalcularTotal()
     End Sub
 
-    Private Sub btnIngreso_Click(sender As Object, e As EventArgs) Handles btnIngreso.Click
+    Private Sub RecalcularTotal()
+        Dim totalVenta As Decimal = 0.0D
+        For Each row As DataGridViewRow In dgvVenta.Rows
+            If Not row.IsNewRow AndAlso row.Cells("colSubtotal").Value IsNot Nothing Then
+                Dim subtotal As Decimal = 0.0D
+                If Decimal.TryParse(row.Cells("colSubtotal").Value?.ToString(), subtotal) Then
+                    totalVenta += subtotal
+                End If
+            End If
+        Next
+        txtTotalVenta.Text = totalVenta.ToString("N2")
+    End Sub
+
+    Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnIngreso.Click
         If idClienteSeleccionado = 0 Then
             MessageBox.Show("Seleccione un cliente.", "Error")
             Exit Sub
         End If
 
-        Dim totalVentaCalculado As Decimal = 0.0D
+        Dim totalVenta As Decimal
         Dim productosParaVender As New List(Of DataGridViewRow)()
 
-        For Each row As DataGridViewRow In DataGridView1.Rows
+        If Not Decimal.TryParse(txtTotalVenta.Text, totalVenta) OrElse totalVenta <= 0 Then
+            MessageBox.Show("Debe agregar al menos un producto con cantidad válida para generar una venta.", "Error")
+            Exit Sub
+        End If
+
+        For Each row As DataGridViewRow In dgvVenta.Rows
             If Not row.IsNewRow AndAlso row.Cells("colProducto").Value IsNot Nothing Then
-                Dim subtotal As Decimal = 0.0D
+                Dim productoID As Integer = Convert.ToInt32(row.Cells("colProducto").Value)
                 Dim cantidad As Integer = 0
 
-                If Decimal.TryParse(row.Cells("colSubtotal").Value?.ToString(), subtotal) AndAlso
-                   Integer.TryParse(row.Cells("colCantidad").Value?.ToString(), cantidad) AndAlso
-                   cantidad > 0 Then
+                If Integer.TryParse(row.Cells("colCantidad").Value?.ToString(), cantidad) AndAlso cantidad > 0 Then
 
-                    totalVentaCalculado += subtotal
+                    Dim stockActual As Integer = ObtenerStockActual(productoID)
+
+                    If stockActual = 0 Then
+                        MessageBox.Show($"ERROR: El producto '{row.Cells("colProducto").FormattedValue.ToString()}' no tiene stock disponible (0).", "Stock Insuficiente", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        Exit Sub
+                    ElseIf cantidad > stockActual Then
+                        MessageBox.Show($"ERROR: Stock insuficiente para '{row.Cells("colProducto").FormattedValue.ToString()}'. Stock disponible: {stockActual}. Cantidad solicitada: {cantidad}.", "Stock Insuficiente", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        Exit Sub
+                    End If
+
                     productosParaVender.Add(row)
                 ElseIf row.Cells("colProducto").Value IsNot Nothing Then
                     MessageBox.Show("El producto seleccionado requiere una cantidad mayor a cero.", "Error de Cantidad")
@@ -165,72 +201,61 @@ Public Class Ventas
             End If
         Next
 
-        If totalVentaCalculado <= 0 Then
-            MessageBox.Show("Debe agregar al menos un producto con cantidad válida.", "Error")
+        If productosParaVender.Count = 0 Then
+            MessageBox.Show("No hay productos válidos para vender.", "Error")
             Exit Sub
         End If
 
-        RegistrarVentaCompleta(idClienteSeleccionado, totalVentaCalculado, productosParaVender)
+        RegistrarVentaYDetalle(idClienteSeleccionado, totalVenta, productosParaVender)
+        btnIngreso.Enabled = False
+        cbxCliente.Enabled = False
+        dgvVenta.Enabled = False
     End Sub
 
-    Private Sub RegistrarVentaCompleta(ByVal clienteID As Integer, ByVal total As Decimal, ByVal filasVenta As List(Of DataGridViewRow))
+    Private Function ObtenerStockActual(ByVal productoID As Integer) As Integer
+        Dim query As String = $"SELECT stock FROM Productos WHERE id_producto = {productoID};"
+        Dim resultado As Object = Module1.ObtenerEscalar(query)
 
-        Using connection As New MySqlConnection(CONNECTION_STRING)
-            connection.Open()
-            Dim transaction As MySqlTransaction = connection.BeginTransaction()
+        If resultado IsNot Nothing AndAlso Not IsDBNull(resultado) Then
+            Return Convert.ToInt32(resultado)
+        Else
+            Return 0
+        End If
+    End Function
 
-            Try
-                Dim queryVenta As String = "INSERT INTO Ventas (fecha_venta, id_cliente, total) VALUES (NOW(), @cliente, @total); SELECT LAST_INSERT_ID();"
-                Dim ventaID As Integer
+    Private Sub RegistrarVentaYDetalle(ByVal clienteID As Integer, ByVal total As Decimal, ByVal filasVenta As List(Of DataGridViewRow))
+        Dim ventaID As Integer = 0
+        Dim conn As MySqlConnection = Module1.conectar()
 
-                Using cmdVenta As New MySqlCommand(queryVenta, connection, transaction)
-                    cmdVenta.Parameters.AddWithValue("@cliente", clienteID)
-                    cmdVenta.Parameters.AddWithValue("@total", total)
-                    ventaID = Convert.ToInt32(cmdVenta.ExecuteScalar())
-                End Using
-
+        Try
+            Dim queryVenta As String = $"INSERT INTO Ventas (fecha_venta, id_cliente, total) VALUES (NOW(), {clienteID}, {total.ToString().Replace(",", ".")}); SELECT LAST_INSERT_ID();"
+            conn.Open()
+            Using cmdVenta As New MySqlCommand(queryVenta, conn)
+                ventaID = Convert.ToInt32(cmdVenta.ExecuteScalar())
+            End Using
+            conn.Close()
+            If ventaID > 0 Then
                 For Each row As DataGridViewRow In filasVenta
                     Dim productoID As Integer = Convert.ToInt32(row.Cells("colProducto").Value)
                     Dim cantidad As Integer = Convert.ToInt32(row.Cells("colCantidad").Value)
                     Dim precioUnitario As Decimal = Convert.ToDecimal(row.Cells("colPrecioUnitario").Value)
-
-                    If VerificarStock(productoID, cantidad) Then
-                        RegistrarDetalleYActualizarStock(ventaID, productoID, cantidad, precioUnitario, connection, transaction)
-                    Else
-                        Throw New Exception($"Stock insuficiente para producto {row.Cells("colProducto").FormattedValue.ToString()}. Cantidad solicitada: {cantidad}")
-                    End If
+                    Dim queryDetalle As String = $"INSERT INTO Detalle_Ventas (id_venta, id_producto, cantidad, precio_unitario) VALUES ({ventaID}, {productoID}, {cantidad}, {precioUnitario.ToString().Replace(",", ".")});"
+                    Module1.EjecutarOrden(queryDetalle, conn)
+                    Dim queryStock As String = $"UPDATE Productos SET stock = stock - {cantidad} WHERE id_producto = {productoID};"
+                    Module1.EjecutarOrden(queryStock, conn)
                 Next
+            End If
 
-                transaction.Commit()
-                MessageBox.Show("Venta registrada con éxito.", "Éxito")
-
-
-                ConfigurarDataGridViewVenta()
-
-            Catch ex As Exception
-                transaction.Rollback()
-                MessageBox.Show("Fallo la transacción: " & ex.Message, "Error de Venta", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            End Try
-        End Using
-    End Sub
-
-    Private Sub RegistrarDetalleYActualizarStock(ByVal ventaID As Integer, ByVal productoID As Integer, ByVal cantidad As Integer, ByVal precio As Decimal, ByVal connection As MySqlConnection, ByVal transaction As MySqlTransaction)
-
-        Dim queryDetalle As String = "INSERT INTO Detalle_Ventas (id_venta, id_producto, cantidad, precio_unitario) VALUES (@ventaId, @productoId, @cantidad, @precio);"
-        Using cmdDetalle As New MySqlCommand(queryDetalle, connection, transaction)
-            cmdDetalle.Parameters.AddWithValue("@ventaId", ventaID)
-            cmdDetalle.Parameters.AddWithValue("@productoId", productoID)
-            cmdDetalle.Parameters.AddWithValue("@cantidad", cantidad)
-            cmdDetalle.Parameters.AddWithValue("@precio", precio)
-            cmdDetalle.ExecuteNonQuery()
-        End Using
-
-        Dim queryStock As String = "UPDATE Productos SET stock = stock - @cantidad WHERE id_producto = @id;"
-        Using cmdStock As New MySqlCommand(queryStock, connection, transaction)
-            cmdStock.Parameters.AddWithValue("@cantidad", cantidad)
-            cmdStock.Parameters.AddWithValue("@id", productoID)
-            cmdStock.ExecuteNonQuery()
-        End Using
+            MessageBox.Show("Venta registrada con éxito y stock actualizado.", "Éxito")
+            'ConfigurarDataGridViewVenta()
+            'txtTotalVenta.Text = "0.00"
+            btnIngreso.Enabled = False
+            btnImp.Enabled = True
+        Catch ex As Exception
+            MessageBox.Show("Fallo en el proceso de venta: " & ex.Message, "Error de Venta", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            If conn.State = ConnectionState.Open Then conn.Close()
+        End Try
     End Sub
 
     Private Function VerificarStock(ByVal productoID As Integer, ByVal cantidad As Integer) As Boolean
@@ -259,17 +284,17 @@ Public Class Ventas
 
     Private Sub CargarDetalleVenta(ByVal ventaID As Integer)
         If ventaID = 0 Then
-            DataGridView1.DataSource = Nothing
+            dgvVenta.DataSource = Nothing
             Exit Sub
         End If
 
         Dim query As String = "SELECT P.nombre, D.cantidad, D.precio_unitario, (D.cantidad * D.precio_unitario) AS Subtotal " &
-                              "FROM Detalle_Ventas AS D " &
-                              "JOIN Productos AS P ON D.id_producto = P.id_producto " &
-                              "WHERE D.id_venta = @ventaId;"
+                   "FROM Detalle_Ventas AS D " &
+                   "JOIN Productos AS P ON D.id_producto = P.id_producto " &
+                   "WHERE D.id_venta = @ventaId;"
 
         Try
-            Dim dtDetalle As New DataTable()
+            Dim dtDetalle As New System.Data.DataTable()
 
             Using connection As New MySqlConnection(CONNECTION_STRING)
                 Using adapter As New MySqlDataAdapter(query, connection)
@@ -278,15 +303,15 @@ Public Class Ventas
                 End Using
             End Using
 
-            DataGridView1.DataSource = dtDetalle
+            dgvVenta.DataSource = dtDetalle
 
         Catch ex As Exception
             MessageBox.Show("Error al mostrar el detalle de la venta: " & ex.Message, "Error DB")
         End Try
     End Sub
 
-    Private Sub btnActualizar_Click(sender As Object, e As EventArgs) Handles btnActualizar.Click
-        CargarNombresClientesConID()
+    Private Sub btnActualizar_Click(sender As Object, e As EventArgs)
+        CargarClientes()
         ConfigurarDataGridViewVenta()
         MessageBox.Show("Vistas actualizadas.", "Éxito")
     End Sub
@@ -296,5 +321,19 @@ Public Class Ventas
         Else
             idClienteSeleccionado = 0
         End If
+    End Sub
+
+    Private Sub btnImp_Click(sender As Object, e As EventArgs) Handles btnImp.Click
+        GridAExcelV2(dgvVenta, $"Factura {cbxCliente.Text} Total: {txtTotalVenta.Text}")
+    End Sub
+
+    Private Sub btnLimp_Click(sender As Object, e As EventArgs) Handles btnLimp.Click
+        ConfigurarDataGridViewVenta()
+        txtTotalVenta.Text = "0.00"
+        btnImp.Enabled = False
+        'btnLimp.Enabled = False
+        btnIngreso.Enabled = True
+        dgvVenta.Enabled = True
+        cbxCliente.Enabled = True
     End Sub
 End Class

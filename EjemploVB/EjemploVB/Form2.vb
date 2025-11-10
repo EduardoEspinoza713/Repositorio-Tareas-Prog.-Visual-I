@@ -12,25 +12,7 @@ Public Class Form2
         Dim con As MySqlConnection
         con = conectar()
         'con.Close()
-        If (ctUs.Text = "#" And ctContra.Text = "") Then
-            formPrin = New Form3()
-            formPrin.Padre(Me)
-            log = 1
-            formPrin.Show()
-            Me.Visible = False
-            'Me.Close()
-            Console.WriteLine("Sesión especial admin")
-            Exit Sub
-        ElseIf (ctUs.Text = "*" And ctContra.Text = "") Then
-            formPrin = New Form3()
-            formPrin.Padre(Me)
-            log = 2
-            formPrin.Show()
-            Me.Visible = False
-            'Me.Close()
-            Console.WriteLine("Sesión especial ordinaria")
-            Exit Sub
-        End If
+
         If (EjecutarSelect($"select * from usuarios where username='{ctUs.Text}' and password=md5('{ctContra.Text}')", con) = True) Then
             MessageBox.Show("Ha iniciado sesión correctamente")
             formPrin = New Form3()
